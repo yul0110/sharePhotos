@@ -23,6 +23,6 @@ public class HomeController {
 	@RequestMapping(value = "/yul/name")
     public String log() {
                    
-        return "/yul";
+        return "/yul1";
     }
 }
