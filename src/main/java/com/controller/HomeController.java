@@ -8,16 +8,16 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class HomeController {
 
 	@RequestMapping(value = "/", method = RequestMethod.GET)
-    public String home() {
+    public String main() {
 		System.out.println("home controller start");
                    
-        return "/index";
+        return "/main";
     }
 	
-	@RequestMapping(value = "/yul", method = RequestMethod.GET)
+	@RequestMapping(value = "/about", method = RequestMethod.GET)
     public String menu() {
                    
-        return "/yul";
+        return "/about";
     }
 	
 	@RequestMapping(value = "/yul/name")
