@@ -11,18 +11,43 @@ public class HomeController {
     public String main() {
 		System.out.println("home controller start");
                    
-        return "/main";
+        return "main";
     }
 	
 	@RequestMapping(value = "/about", method = RequestMethod.GET)
-    public String menu() {
+    public String about() {
                    
-        return "/about";
+        return "about";
     }
 	
-	@RequestMapping(value = "/yul/name")
-    public String log() {
+	@RequestMapping(value = "/gallery", method = RequestMethod.GET)
+    public String gallery() {
                    
-        return "/yul1";
+        return "gallery";
     }
+	
+	@RequestMapping(value = "/gallerySingle", method = RequestMethod.GET)
+	public String gallerySingle() {
+		
+		return "gallerySingle";
+	}
+	
+	@RequestMapping(value = "/contact", method = RequestMethod.GET)
+	public String contact() {
+		
+		return "contact";
+	}	
+	
+	@RequestMapping(value = "/basic", method = RequestMethod.GET)
+	public String basic() {
+		
+		return "basic";
+	}	
+	
+	@RequestMapping(value = "/service", method = RequestMethod.GET)
+	public String service() {
+		
+		return "service";
+	}	
+	
 }
