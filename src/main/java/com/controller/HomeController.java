@@ -10,8 +10,7 @@ public class HomeController {
 	@RequestMapping(value = "/", method = RequestMethod.GET)
     public String main() {
 		System.out.println("home controller start");
-                   
-		이율이쁨
+                  
 		
         return "main";
     }
