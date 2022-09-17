@@ -9,28 +9,27 @@ public class HomeController {
 
 	@RequestMapping(value = "/", method = RequestMethod.GET)
     public String main() {
-		System.out.println("home controller start");
-                  
+		System.out.println("home controller start");            
 		
-        return "main";
+        return "home/main";
     }
-	
+
 	@RequestMapping(value = "/about", method = RequestMethod.GET)
     public String about() {
                    
-        return "about";
+        return "album/about";
     }
 	
 	@RequestMapping(value = "/gallery", method = RequestMethod.GET)
     public String gallery() {
                    
-        return "gallery";
+        return "albumBoard/gallery";
     }
 	
 	@RequestMapping(value = "/gallerySingle", method = RequestMethod.GET)
 	public String gallerySingle() {
 		
-		return "gallerySingle";
+		return "albumBoard/gallerySingle";
 	}
 	
 	@RequestMapping(value = "/contact", method = RequestMethod.GET)
@@ -42,13 +41,13 @@ public class HomeController {
 	@RequestMapping(value = "/basic", method = RequestMethod.GET)
 	public String basic() {
 		
-		return "basic";
+		return "myPage/basic";
 	}	
 	
 	@RequestMapping(value = "/service", method = RequestMethod.GET)
 	public String service() {
 		
-		return "service";
+		return "pyMent/service";
 	}	
 	
 }
