@@ -52,27 +52,27 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li class="dropdown"><a href="#"><span>Gallery</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+          <li><a href="/">홈</a></li>
+          <li><a href="/gallery">사진관리</a></li>
+          <li class="dropdown"><a href="#"><span>앨범</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
-              <li><a href="/gallery.html">Nature</a></li>
-              <li><a href="/gallery.html">People</a></li>
-              <li><a href="/gallery.html">Architecture</a></li>
-              <li><a href="/gallery.html">Animals</a></li>
-              <li><a href="/gallery.html">Sports</a></li>
-              <li><a href="/gallery.html">Travel</a></li>
-              <li class="dropdown"><a href="#"><span>Sub Menu</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+              <li><a href="/gallery">앨범</a></li>
+              <li><a href="/gallery">앨범</a></li>
+              <li><a href="/gallery">앨범</a></li>
+              <li><a href="/gallery">앨범</a></li>
+              <li><a href="/gallery">앨범</a></li>
+              <li><a href="/gallery">앨범</a></li>
+              <li class="dropdown"><a href="#"><span>Sub 앨범</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
                 <ul>
-                  <li><a href="#">Sub Menu 1</a></li>
-                  <li><a href="#">Sub Menu 2</a></li>
-                  <li><a href="#">Sub Menu 3</a></li>
+                  <li><a href="/gallery">Sub 앨범 1</a></li>
+                  <li><a href="/gallery">Sub 앨범 2</a></li>
+                  <li><a href="/gallery">Sub 앨범 3</a></li>
                 </ul>
               </li>
             </ul>
           </li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="contact.html" class="active">Contact</a></li>
+          <li><a href="/services">앨친관리</a></li>
+          <li><a href="/contact" class="active">고객센터</a></li>
         </ul>
       </nav><!-- .navbar -->
 
