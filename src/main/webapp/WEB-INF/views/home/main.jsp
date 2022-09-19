@@ -54,26 +54,26 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a href="/" class="active">홈</a></li>
-          <li><a href="/about">사진관리</a></li>
-          <li class="dropdown"><a href="#"><span>앨범</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+          <li><a href="#">사진관리</a></li>
+          <li class="dropdown"><a href="/gallery"><span>앨범</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
-              <li><a href="gallery.html">앨범이름</a></li>
-              <li><a href="gallery.html">앨범이름</a></li>
-              <li><a href="gallery.html">앨범이름</a></li>
-              <li><a href="gallery.html">앨범이름</a></li>
-              <li><a href="gallery.html">앨범이름</a></li>
-              <li><a href="gallery.html">앨범이름</a></li>
-              <li class="dropdown"><a href="#"><span>미정</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+              <li><a href="/gallery">앨범이름</a></li>
+              <li><a href="/gallery">앨범이름</a></li>
+              <li><a href="/gallery">앨범이름</a></li>
+              <li><a href="/gallery">앨범이름</a></li>
+              <li><a href="/gallery">앨범이름</a></li>
+              <li><a href="/gallery">앨범이름</a></li>
+              <li class="dropdown"><a href="/gallery"><span>미정</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
                 <ul>
-                  <li><a href="#">미정 1</a></li>
-                  <li><a href="#">미정 2</a></li>
-                  <li><a href="#">미정 3</a></li>
+                  <li><a href="/gallery">미정 1</a></li>
+                  <li><a href="/gallery">미정 2</a></li>
+                  <li><a href="/gallery">미정 3</a></li>
                 </ul>
               </li>
             </ul>
           </li>
-          <li><a href="services.html">앨친관리</a></li>
-          <li><a href="contact.html">고객센터</a></li>
+          <li><a href="#">앨친관리</a></li>
+          <li><a href="#">고객센터</a></li>
         </ul>
       </nav><!-- .navbar -->
 
