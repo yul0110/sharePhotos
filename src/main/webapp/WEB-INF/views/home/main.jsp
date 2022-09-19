@@ -44,7 +44,7 @@
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center  me-auto me-lg-0">
+      <a href="/" class="logo d-flex align-items-center  me-auto me-lg-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="static/images/logo.png" alt=""> -->
         <i class="bi bi-camera"></i>
@@ -55,19 +55,19 @@
         <ul>
           <li><a href="/" class="active">홈</a></li>
           <li><a href="#">사진관리</a></li>
-          <li class="dropdown"><a href="/gallery"><span>앨범</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+          <li class="dropdown"><a href="/myAlbum"><span>앨범</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
-              <li><a href="/gallery">앨범이름</a></li>
-              <li><a href="/gallery">앨범이름</a></li>
-              <li><a href="/gallery">앨범이름</a></li>
-              <li><a href="/gallery">앨범이름</a></li>
-              <li><a href="/gallery">앨범이름</a></li>
-              <li><a href="/gallery">앨범이름</a></li>
-              <li class="dropdown"><a href="/gallery"><span>미정</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+              <li><a href="/myAlbum">앨범이름</a></li>
+              <li><a href="/myAlbum">앨범이름</a></li>
+              <li><a href="/myAlbum">앨범이름</a></li>
+              <li><a href="/myAlbum">앨범이름</a></li>
+              <li><a href="/myAlbum">앨범이름</a></li>
+              <li><a href="/myAlbum">앨범이름</a></li>
+              <li class="dropdown"><a href="/shareAlbum"><span>공유된앨범</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
                 <ul>
-                  <li><a href="/gallery">미정 1</a></li>
-                  <li><a href="/gallery">미정 2</a></li>
-                  <li><a href="/gallery">미정 3</a></li>
+                  <li><a href="/shareAlbum">공유앨범 1</a></li>
+                  <li><a href="/shareAlbum">공유앨범 2</a></li>
+                  <li><a href="/shareAlbum">공유앨범 3</a></li>
                 </ul>
               </li>
             </ul>
