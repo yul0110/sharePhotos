@@ -194,11 +194,11 @@
   </div>
 
   <!-- Vendor JS Files -->
-  <script src="resources/css/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="resources/css/swiper/swiper-bundle.min.js"></script>
-  <script src="resources/css/glightbox/js/glightbox.min.js"></script>
-  <script src="resources/css/aos/aos.js"></script>
-  <script src="resources/css/php-email-form/validate.js"></script>
+  <script src="resources/js/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="resources/js/swiper/swiper-bundle.min.js"></script>
+  <script src="resources/js/glightbox/js/glightbox.min.js"></script>
+  <script src="resources/js/aos/aos.js"></script>
+  <script src="resources/js/php-email-form/validate.js"></script>
 
   <!-- Template Main JS File -->
   <script src="resources/js/main.js"></script>
