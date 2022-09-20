@@ -42,4 +42,10 @@ public class LoginController {
 		return "login/login";
 	}	
 	
+	//로그인 페이지
+	@RequestMapping(value = "/join", method = RequestMethod.GET)
+	public String join() {
+		
+		return "login//join";
+	}	
 }
