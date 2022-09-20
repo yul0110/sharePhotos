@@ -54,19 +54,19 @@
         <ul>
           <li><a href="/">홈</a></li>
           <li><a href="/gallery">사진관리</a></li>
-          <li class="dropdown"><a href="#"><span>앨범</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+          <li class="dropdown"><a href="/myAlbum"><span>앨범</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
-              <li><a href="/gallery" class="active">앨범</a></li>
-              <li><a href="/gallery">앨범</a></li>
-              <li><a href="/gallery">앨범</a></li>
-              <li><a href="/gallery">앨범</a></li>
-              <li><a href="/gallery">앨범</a></li>
-              <li><a href="/gallery">앨범</a></li>
-              <li class="dropdown"><a href="#"><span>Sub 앨범</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+              <li><a href="/album" class="active">앨범</a></li>
+              <li><a href="/album">앨범</a></li>
+              <li><a href="/album">앨범</a></li>
+              <li><a href="/album">앨범</a></li>
+              <li><a href="/album">앨범</a></li>
+              <li><a href="/album">앨범</a></li>
+              <li class="dropdown"><a href="/shareAlbum"><span>Sub 앨범</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
                 <ul>
-                  <li><a href="/gallery">Sub 앨범 1</a></li>
-                  <li><a href="/gallery">Sub 앨범 2</a></li>
-                  <li><a href="/gallery">Sub 앨범 3</a></li>
+                  <li><a href="/album">Sub 앨범 1</a></li>
+                  <li><a href="/album">Sub 앨범 2</a></li>
+                  <li><a href="/album">Sub 앨범 3</a></li>
                 </ul>
               </li>
             </ul>

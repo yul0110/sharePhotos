@@ -54,20 +54,20 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a href="/" class="active">홈</a></li>
-          <li><a href="#">사진관리</a></li>
+          <li><a href="/myAlbum">사진관리</a></li>
           <li class="dropdown"><a href="/myAlbum"><span>앨범</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
-              <li><a href="/myAlbum">앨범이름</a></li>
-              <li><a href="/myAlbum">앨범이름</a></li>
-              <li><a href="/myAlbum">앨범이름</a></li>
-              <li><a href="/myAlbum">앨범이름</a></li>
-              <li><a href="/myAlbum">앨범이름</a></li>
-              <li><a href="/myAlbum">앨범이름</a></li>
+              <li><a href="/album">앨범이름</a></li>
+              <li><a href="/album">앨범이름</a></li>
+              <li><a href="/album">앨범이름</a></li>
+              <li><a href="/album">앨범이름</a></li>
+              <li><a href="/album">앨범이름</a></li>
+              <li><a href="/album">앨범이름</a></li>
               <li class="dropdown"><a href="/shareAlbum"><span>공유된앨범</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
                 <ul>
-                  <li><a href="/shareAlbum">공유앨범 1</a></li>
-                  <li><a href="/shareAlbum">공유앨범 2</a></li>
-                  <li><a href="/shareAlbum">공유앨범 3</a></li>
+                  <li><a href="/album">공유앨범 1</a></li>
+                  <li><a href="/album">공유앨범 2</a></li>
+                  <li><a href="/album">공유앨범 3</a></li>
                 </ul>
               </li>
             </ul>
@@ -94,7 +94,7 @@
         <div class="col-lg-6 text-center">
           <h2>추억이 깃든 사진들 공유하고 이야기 나눠요</h2>
           <p>잃어버리는 사진들은 모아 관리해요.</p>
-          <a href="#" class="btn-get-started">회원가입</a>
+          <a href="/login" class="btn-get-started">로그인</a>
         </div>
       </div>
     </div>

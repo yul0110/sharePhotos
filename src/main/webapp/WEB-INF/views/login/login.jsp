@@ -53,20 +53,20 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a href="/">홈</a></li>
-          <li><a href="/gallery">사진관리</a></li>
+          <li><a href="/myAlbum">사진관리</a></li>
           <li class="dropdown"><a href="#"><span>앨범</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
-              <li><a href="/gallery">앨범</a></li>
-              <li><a href="/gallery">앨범</a></li>
-              <li><a href="/gallery">앨범</a></li>
-              <li><a href="/gallery">앨범</a></li>
-              <li><a href="/gallery">앨범</a></li>
-              <li><a href="/gallery">앨범</a></li>
-              <li class="dropdown"><a href="#"><span>Sub 앨범</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+              <li><a href="/album">앨범</a></li>
+              <li><a href="/album">앨범</a></li>
+              <li><a href="/album">앨범</a></li>
+              <li><a href="/album">앨범</a></li>
+              <li><a href="/album">앨범</a></li>
+              <li><a href="/album">앨범</a></li>
+              <li class="dropdown"><a href="/shareAlbum"><span>Sub 앨범</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
                 <ul>
-                  <li><a href="/gallery">Sub 앨범 1</a></li>
-                  <li><a href="/gallery">Sub 앨범 2</a></li>
-                  <li><a href="/gallery">Sub 앨범 3</a></li>
+                  <li><a href="/album">Sub 앨범 1</a></li>
+                  <li><a href="/album">Sub 앨범 2</a></li>
+                  <li><a href="/album">Sub 앨범 3</a></li>
                 </ul>
               </li>
             </ul>
@@ -94,8 +94,6 @@
         <div class="row d-flex justify-content-center">
           <div class="col-lg-6 text-center">
             <h2>로그인</h2>
-            <p>Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo odio sint voluptas consequatur ut a odio voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi ratione sint. Sit quaerat ipsum dolorem.</p>
-
           </div>
         </div>
       </div>
@@ -144,11 +142,10 @@
           <div class="col-lg-9">
             <form action="forms/contact.php" method="post" role="form" class="php-email-form">
               <div class="row">
-                <div class="col-md-6 form-group">
+                <div class="col-md-6 form-group" style="margin:auto;">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                  <br>
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
                 </div>
               </div>
               <div class="my-3">

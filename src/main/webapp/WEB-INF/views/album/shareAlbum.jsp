@@ -55,19 +55,19 @@
         <ul>
           <li><a href="/" class="active">홈</a></li>
           <li><a href="#">사진관리</a></li>
-          <li class="dropdown"><a href="/gallery"><span>앨범</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+          <li class="dropdown"><a href="/myAlbum"><span>앨범</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
-              <li><a href="/gallery">앨범이름</a></li>
-              <li><a href="/gallery">앨범이름</a></li>
-              <li><a href="/gallery">앨범이름</a></li>
-              <li><a href="/gallery">앨범이름</a></li>
-              <li><a href="/gallery">앨범이름</a></li>
-              <li><a href="/gallery">앨범이름</a></li>
-              <li class="dropdown"><a href="/gallery"><span>공유된앨범</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+              <li><a href="/album">앨범이름</a></li>
+              <li><a href="/album">앨범이름</a></li>
+              <li><a href="/album">앨범이름</a></li>
+              <li><a href="/album">앨범이름</a></li>
+              <li><a href="/album">앨범이름</a></li>
+              <li><a href="/album">앨범이름</a></li>
+              <li class="dropdown"><a href="/shareAlbum"><span>공유된앨범</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
                 <ul>
-                  <li><a href="/gallery">공유앨범 1</a></li>
-                  <li><a href="/gallery">공유앨범 2</a></li>
-                  <li><a href="/gallery">공유앨범 3</a></li>
+                  <li><a href="/album">공유앨범 1</a></li>
+                  <li><a href="/album">공유앨범 2</a></li>
+                  <li><a href="/album">공유앨범 3</a></li>
                 </ul>
               </li>
             </ul>
@@ -110,8 +110,7 @@
             <div class="gallery-item h-100">
               <img src="resources/images/gallery/gallery-6.jpg" class="img-fluid" alt="">
               <div class="gallery-links d-flex align-items-center justify-content-center">
-                <a href="resources/images/gallery/gallery-6.jpg" title="Gallery 6" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-                <a href="/album" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <a href="/album" class="details-link"><i class=" ">이율님의 여름사냥</i></a>
               </div>
             </div>
           </div><!-- End Gallery Item -->
@@ -119,8 +118,7 @@
             <div class="gallery-item h-100">
               <img src="resources/images/gallery/gallery-7.jpg" class="img-fluid" alt="">
               <div class="gallery-links d-flex align-items-center justify-content-center">
-                <a href="resources/images/gallery/gallery-7.jpg" title="Gallery 7" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-                <a href="/album" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <a href="/album" class="details-link"><i class=" "></i>이율님의 가을사냥</a>
               </div>
             </div>
           </div><!-- End Gallery Item -->
@@ -128,8 +126,7 @@
             <div class="gallery-item h-100">
               <img src="resources/images/gallery/gallery-8.jpg" class="img-fluid" alt="">
               <div class="gallery-links d-flex align-items-center justify-content-center">
-                <a href="resources/images/gallery/gallery-8.jpg" title="Gallery 8" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-                <a href="/album" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <a href="/album" class="details-link"><i class=" ">이율님의 겨울사냥</i></a>
               </div>
             </div>
           </div><!-- End Gallery Item -->
@@ -137,8 +134,7 @@
             <div class="gallery-item h-100">
               <img src="resources/images/gallery/gallery-9.jpg" class="img-fluid" alt="">
               <div class="gallery-links d-flex align-items-center justify-content-center">
-                <a href="resources/images/gallery/gallery-9.jpg" title="Gallery 9" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-                <a href="/album" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <a href="/album" class="details-link"><i class=" ">이율님의 강원도 속초여행</i></a>
               </div>
             </div>
           </div><!-- End Gallery Item -->
@@ -147,7 +143,7 @@
               <img src="resources/images/gallery/gallery-10.jpg" class="img-fluid" alt="">
               <div class="gallery-links d-flex align-items-center justify-content-center">
                 <a href="resources/images/gallery/gallery-10.jpg" title="Gallery 10" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-                <a href="/album" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <a href="/album" class="details-link"><i class=" "></i></a>
               </div>
             </div>
           </div><!-- End Gallery Item -->
@@ -156,7 +152,7 @@
               <img src="resources/images/gallery/gallery-11.jpg" class="img-fluid" alt="">
               <div class="gallery-links d-flex align-items-center justify-content-center">
                 <a href="resources/images/gallery/gallery-11.jpg" title="Gallery 11" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-                <a href="/album" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <a href="/album" class="details-link"><i class=" "></i></a>
               </div>
             </div>
           </div><!-- End Gallery Item -->
@@ -165,7 +161,7 @@
               <img src="resources/images/gallery/gallery-12.jpg" class="img-fluid" alt="">
               <div class="gallery-links d-flex align-items-center justify-content-center">
                 <a href="resources/images/gallery/gallery-12.jpg" title="Gallery 12" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-                <a href="/album" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <a href="/album" class="details-link"><i class=" "></i></a>
               </div>
             </div>
           </div><!-- End Gallery Item -->
@@ -174,7 +170,7 @@
               <img src="resources/images/gallery/gallery-13.jpg" class="img-fluid" alt="">
               <div class="gallery-links d-flex align-items-center justify-content-center">
                 <a href="resources/images/gallery/gallery-13.jpg" title="Gallery 13" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-                <a href="/album" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <a href="/album" class="details-link"><i class=" "></i></a>
               </div>
             </div>
           </div><!-- End Gallery Item -->
@@ -183,7 +179,7 @@
               <img src="resources/images/gallery/gallery-14.jpg" class="img-fluid" alt="">
               <div class="gallery-links d-flex align-items-center justify-content-center">
                 <a href="resources/images/gallery/gallery-14.jpg" title="Gallery 14" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-                <a href="/album" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <a href="/album" class="details-link"><i class=" "></i></a>
               </div>
             </div>
           </div><!-- End Gallery Item -->
@@ -192,7 +188,7 @@
               <img src="resources/images/gallery/gallery-15.jpg" class="img-fluid" alt="">
               <div class="gallery-links d-flex align-items-center justify-content-center">
                 <a href="resources/images/gallery/gallery-15.jpg" title="Gallery 15" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-                <a href="/album" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <a href="/album" class="details-link"><i class=" "></i></a>
               </div>
             </div>
           </div><!-- End Gallery Item -->
@@ -201,7 +197,7 @@
               <img src="resources/images/gallery/gallery-16.jpg" class="img-fluid" alt="">
               <div class="gallery-links d-flex align-items-center justify-content-center">
                 <a href="resources/images/gallery/gallery-16.jpg" title="Gallery 16" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-                <a href="/album" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <a href="/album" class="details-link"><i class=" "></i></a>
               </div>
             </div>
           </div><!-- End Gallery Item -->

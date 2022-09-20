@@ -13,6 +13,8 @@ public class HomeController {
         return "home/main";
     }
 
+	
+	//사용하지않는 컨트롤러 사후 삭제처리 ////////////////////////////////////////////////////////////////////////////
 	@RequestMapping(value = "/about", method = RequestMethod.GET)
     public String about() {
                    
@@ -48,5 +50,8 @@ public class HomeController {
 		
 		return "pyMent/service";
 	}	
+	
+	//사용하지않는 컨트롤러 사후 삭제처리 ////////////////////////////////////////////////////////////////////////////
+	
 	
 }

@@ -57,17 +57,17 @@
           <li><a href="#">사진관리</a></li>
           <li class="dropdown"><a href="/myAlbum"><span>앨범</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
-              <li><a href="/myAlbum">앨범이름</a></li>
-              <li><a href="/myAlbum">앨범이름</a></li>
-              <li><a href="/myAlbum">앨범이름</a></li>
-              <li><a href="/myAlbum">앨범이름</a></li>
-              <li><a href="/myAlbum">앨범이름</a></li>
-              <li><a href="/myAlbum">앨범이름</a></li>
+              <li><a href="/album">앨범이름</a></li>
+              <li><a href="/album">앨범이름</a></li>
+              <li><a href="/album">앨범이름</a></li>
+              <li><a href="/album">앨범이름</a></li>
+              <li><a href="/album">앨범이름</a></li>
+              <li><a href="/album">앨범이름</a></li>
               <li class="dropdown"><a href="/shareAlbum"><span>공유된앨범</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
                 <ul>
-                  <li><a href="/shareAlbum">공유앨범 1</a></li>
-                  <li><a href="/shareAlbum">공유앨범 2</a></li>
-                  <li><a href="/shareAlbum">공유앨범 3</a></li>
+                  <li><a href="/album">공유앨범 1</a></li>
+                  <li><a href="/album">공유앨범 2</a></li>
+                  <li><a href="/album">공유앨범 3</a></li>
                 </ul>
               </li>
             </ul>

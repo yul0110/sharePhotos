@@ -43,14 +43,14 @@ public class AlbumController {
 		return "album/addPhoto";
 	}
 	
-	//사진추가
+	//사진 업로드 처리
 	@RequestMapping(value = "/uploadPhoto", method = RequestMethod.POST)
 	public String uploadPhoto() {
 		
 		return "album/about";
 	}
 	
-	//추가한 사진 저장
+	//업로드된 사진 저장
 	@RequestMapping(value = "/uploadPhotoSave", method = RequestMethod.POST)
 	public String uploadPhotoSave() {
 		
