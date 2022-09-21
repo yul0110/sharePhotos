@@ -1,18 +1,55 @@
 package com.controller;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import com.service.AlbumService;
+
 @Controller
 public class AlbumController {
 
+	@Autowired
+	AlbumService albumService;
 	//내가 만든 앨범 페이지
 	@RequestMapping(value = "/myAlbum", method = RequestMethod.GET)
-	public String myAlbum() {
+	public String myAlbum(String no) {
 		
+  		String ab = albumService.selectAlbum(no);
+
+		System.out.println(ab+"이쁜이");
+	
 		return "album/myAlbum";
 	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	//쉐어 받은 앨범 페이지
 	@RequestMapping(value = "/shareAlbum", method = RequestMethod.GET)
