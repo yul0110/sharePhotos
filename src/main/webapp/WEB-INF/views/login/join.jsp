@@ -102,71 +102,62 @@
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
       <div class="container">
-
-        <div class="row gy-4 justify-content-center">
-
-          <div class="col-lg-3">
-            <div class="info-item d-flex">
-              <i class="bi bi-geo-alt flex-shrink-0"></i>
-              <div>
-                <h4>Location:</h4>
-                <p>A108 Adam Street, New York, NY 535022</p>
-              </div>
-            </div>
-          </div><!-- End Info Item -->
-
-          <div class="col-lg-3">
-            <div class="info-item d-flex">
-              <i class="bi bi-envelope flex-shrink-0"></i>
-              <div>
-                <h4>Email:</h4>
-                <p>info@example.com</p>
-              </div>
-            </div>
-          </div><!-- End Info Item -->
-
-          <div class="col-lg-3">
-            <div class="info-item d-flex">
-              <i class="bi bi-phone flex-shrink-0"></i>
-              <div>
-                <h4>Call:</h4>
-                <p>+1 5589 55488 55</p>
-              </div>
-            </div>
-          </div><!-- End Info Item -->
-
-        </div>
-
         <div class="row justify-content-center mt-4">
-
           <div class="col-lg-9">
             <form action="forms/contact.php" method="post" role="form" class="php-email-form">
               <div class="row">
                 <div class="col-md-6 form-group" style="margin:auto;">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                  <h5 style="font-size:15px;">아이디</h5>
+                  <input type="text" name="name" class="form-control" id="name" placeholder="6~10자 영문,숫자" required>
                   <br>
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                  <h5 style="font-size:15px;">비밀번호</h5>
+                  <input type="text" name="name" class="form-control" id="name" placeholder="6~12자 영문,숫자,특수문자" required>
                   <br>
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                  <h5 style="font-size:15px;">이름</h5>
+                  <input type="text" name="name" class="form-control" id="name" placeholder="name" required>
                   <br>
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                </div>
+                  <h5 style="font-size:15px;">주소</h5>
+                  <input type="text" name="name" class="form-control" id="name" placeholder="address" required>
+                  <br>
+                  <h5 style="font-size:15px;">휴대폰 번호</h5>
+                  <input type="text" name="name" class="form-control" id="name" placeholder="phone number" required>
               </div>
               <div class="my-3">
                 <div class="loading">Loading</div>
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
-              <div class="text-center"><button type="submit">login</button></div>
-              <br>
               <div class="text-center"><button type="submit">join us</button></div>
-            </form>
-          </div><!-- End Contact Form -->
+              <br>
+              <br>
+            </form><!-- End Contact Form -->
+               <div class="row gy-4 justify-content-center">
 
-        </div>
-
-      </div>
-    </section><!-- End Contact Section -->
+		      <div class="col-lg-3">
+		        <div class="info-item d-flex">
+		          <i class="bi bi-geo-alt flex-shrink-0"></i>
+		          <div>
+		            <h4>Location:</h4>
+		            <p>A108 Adam Street, New York, NY 535022</p>
+		          </div>
+		        </div>
+		      </div><!-- End Info Item -->
+		
+		      <div class="col-lg-3">
+		        <div class="info-item d-flex">
+		          <i class="bi bi-envelope flex-shrink-0"></i>
+		          <div>
+		            <h4>Email:</h4>
+		            <p>info@example.com</p>
+		          </div>
+		        </div>
+		      </div><!-- End Info Item -->
+		      	      
+		    </div>		    	        
+		      </div>		
+		    </div>		
+		  </div>	  
+		</section><!-- End Contact Section -->
 
   </main><!-- End #main -->
 

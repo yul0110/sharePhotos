@@ -16,27 +16,21 @@ public class HomeController {
 	@RequestMapping(value = "/", method = RequestMethod.GET)
     public String main(String no) {
 		
-		String ab = testService.selectTest(no);
-		
-		System.out.println(ab+"이쁜이");
+//		String ab = testService.selectTest(no);
+//		
+//		System.out.println(ab+"이쁜이");
 		
 		
         return "home/main";
     }
+	
+	@RequestMapping(value = "/a", method = RequestMethod.GET)
+	public String a(String no) {
+		
+		
+		return "contact";
+	}
 
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 	
 	
