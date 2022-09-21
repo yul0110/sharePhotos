@@ -1,15 +1,26 @@
 package com.controller;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import com.service.LoginService;
+import com.service.TestService;
+
 @Controller
 public class LoginController {
 
+	@Autowired
+	LoginService loginService;
+	
 	//로그인 페이지
 	@RequestMapping(value = "/login", method = RequestMethod.GET)
-	public String login() {
+	public String login(String no) {
+		
+		String ab = loginService.selectLogin(no);
+		
+		System.out.println(ab+"이쁜이2");
 		
 		return "login/login";
 	}	
