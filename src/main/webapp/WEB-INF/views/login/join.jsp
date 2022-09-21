@@ -139,8 +139,8 @@
 		        <div class="info-item d-flex">
 		          <i class="bi bi-geo-alt flex-shrink-0"></i>
 		          <div>
-		            <h4>Location:</h4>
-		            <p>A108 Adam Street, New York, NY 535022</p>
+		            <h4>찾기</h4>
+		            <p>아이디/비밀번호를 잊어버리셨나요?</p>
 		          </div>
 		        </div>
 		      </div><!-- End Info Item -->
@@ -149,7 +149,7 @@
 		        <div class="info-item d-flex">
 		          <i class="bi bi-envelope flex-shrink-0"></i>
 		          <div>
-		            <h4>Email:</h4>
+		            <h4>고객센터</h4>
 		            <p>info@example.com</p>
 		          </div>
 		        </div>
