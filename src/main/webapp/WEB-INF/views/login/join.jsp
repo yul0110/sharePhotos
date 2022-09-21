@@ -114,13 +114,15 @@
                   <input type="text" name="name" class="form-control" id="name" placeholder="6~12자 영문,숫자,특수문자" required>
                   <br>
                   <h5 style="font-size:15px;">이름</h5>
-                  <input type="text" name="name" class="form-control" id="name" placeholder="name" required>
+                  <input type="text" name="name" class="form-control" id="name" placeholder="홍길동" required>
                   <br>
                   <h5 style="font-size:15px;">주소</h5>
-                  <input type="text" name="name" class="form-control" id="name" placeholder="address" required>
+                  <input type="text" name="name" class="form-control" id="name" placeholder="강남구" required>
                   <br>
-                  <h5 style="font-size:15px;">휴대폰 번호</h5>
-                  <input type="text" name="name" class="form-control" id="name" placeholder="phone number" required>
+	              <h5 style="font-size:15px;">휴대폰 번호</h5>
+				  <input type="text" name="name" class="form-control" id="name" placeholder="01012345678" required>
+				   <br>
+	              <button type="submit">휴대폰 인증</button>
               </div>
               <div class="my-3">
                 <div class="loading">Loading</div>
