@@ -5,5 +5,5 @@ import org.apache.ibatis.annotations.Mapper;
 @Mapper
 public interface MyPageMapper {
 
-	String selectTest(String no);
+	String selectMyPage(String no);
 }
