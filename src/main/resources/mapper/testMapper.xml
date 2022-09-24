@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
+
 <mapper namespace="com.mapper.TestMapper">
+
+
+	<!-- 테스트 조회 -->
 	<select id="selectTest" resultType="string" parameterType="String">
 		SELECT name FROM testData WHERE id= #{no}
 	</select>
+	
+	<!-- 모든 멤버리스트 조회 -->
+	<select id="selectMemberList" resultType="com.vo.Member">
+		select id, nm, userId, addr1, addr2, pno, regDt, regId, updateDt, updateId from member
+	</select>	
 </mapper>

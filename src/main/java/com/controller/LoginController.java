@@ -1,5 +1,7 @@
 package com.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -7,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.service.LoginService;
 import com.service.TestService;
+import com.vo.Member;
 
 @Controller
 public class LoginController {
@@ -14,13 +17,16 @@ public class LoginController {
 	@Autowired
 	LoginService loginService;
 	
+	@Autowired
+	TestService testService;
+	
 	//로그인 페이지
 	@RequestMapping(value = "/login", method = RequestMethod.GET)
-	public String login(String no) {
+	public String login() {
 		
-		String ab = loginService.selectLogin(no);
 		
-		System.out.println(ab+"이쁜이2");
+		List<Member> memberList = testService.selectMemberList();
+		
 		
 		return "login/login";
 	}	
