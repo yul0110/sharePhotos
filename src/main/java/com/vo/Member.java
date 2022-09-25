@@ -8,7 +8,7 @@ import lombok.Data;
 public class Member {
 	
 	//멤버id
-	private int id;
+	private Integer id;
 	
 	//이름
 	private String nm;
@@ -29,11 +29,12 @@ public class Member {
 	private Date regDt;
 	
 	//작성자
-	private int regId;
+	private Integer regId;
 	
 	//수정날짜
 	private Date updateDt;
 	
 	//수정자
-	private int updateId;
+	private Integer updateId;
+
 }
