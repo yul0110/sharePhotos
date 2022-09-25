@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.dto.MemberDto;
 import com.service.LoginService;
 import com.service.TestService;
 import com.vo.Member;
@@ -76,8 +77,18 @@ public class LoginController {
 	
 	//로그인 페이지
 	@RequestMapping(value = "/join", method = RequestMethod.GET)
-	public String join() {
+	public String join(MemberDto memberDto) {
 		
-		return "login//join";
+		System.out.println("브래이크");
+		
+		int result = loginService.insertJoinMember(memberDto);
+		
+		if(result == 1) {
+			System.out.println("회원가입 완료");
+		}else if(result == 0){
+			System.out.println("등록 실패");
+		}
+		
+		return "login/join";
 	}	
 }
