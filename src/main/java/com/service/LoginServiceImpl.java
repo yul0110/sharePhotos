@@ -5,7 +5,6 @@ import org.springframework.stereotype.Service;
 
 import com.dao.MemberDao;
 import com.mapper.LoginMapper;
-import com.mapper.TestMapper;
 
 @Service
 public class LoginServiceImpl implements LoginService{
@@ -27,6 +26,16 @@ public class LoginServiceImpl implements LoginService{
 		memberDao.setId(sq);
 		
 		return loginMapper.insertJoinMember(memberDao);
+	}
+
+	@Override
+	public int updateMemeberPno(MemberDao memberDao) {
+		return loginMapper.updateMemeberPno(memberDao);
+	}
+
+	@Override
+	public int updateMemeberAddr(MemberDao memberDao) {
+		return loginMapper.updateMemeberAddr(memberDao);
 	}
 
 }

@@ -90,5 +90,32 @@ public class LoginController {
 		}
 		
 		return "login/join";
+	}
+	
+	//회원정도 수정처리 
+	@RequestMapping(value = "/updateMember", method = RequestMethod.GET)
+	public String updateMember(MemberDao memberDao) {
+		
+		int result = 0;
+		
+		
+		if(memberDao.getPno() != null && !memberDao.getPno().equals(" ")) {
+			result = loginService.updateMemeberPno(memberDao);
+			System.out.println("전화번호 수정");
+		}else if(memberDao.getAddr1() != null && !memberDao.getAddr1().equals(" ")) {
+			result = loginService.updateMemeberAddr(memberDao);
+			System.out.println("주소 수정");
+		}else {
+			System.out.println("잘못된 접근 입니다.");
+		}
+		
+		if(result == 1) {
+			System.out.println("수정 완료");
+		}else if(result == 0){
+			System.out.println("등록 실패");
+			//커스텀 익셉션 만들수 있다.
+		}
+		
+		return "login/login";
 	}	
 }

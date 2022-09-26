@@ -2,17 +2,42 @@
 
 <mapper namespace="com.mapper.LoginMapper">
 
+	<!-- CRUD Create -->
+	<!-- 회원가입 회원정보 등록 -->
+	<insert id="insertJoinMember" parameterType="com.dao.MemberDao"> 
+        INSERT INTO member 
+        (id, nm, userId, addr1, addr2, pno, regDt, regId, updateDt, updateId) 
+        VALUES 
+        (#{id}, #{nm}, #{userId}, #{addr1}, #{addr2}, #{pno}, now(), 99999, now(), 99999) 
+    </insert>
 
+	
+	<!-- CRUD Read -->
+	<!-- 테이블에 다음 시퀀스 추출 -->
+	<select id="selectTableNumbering" resultType="int">
+		SELECT COUNT(id) FROM member
+	</select>
+	
+	<!-- 회원 정보 확인 -->
 	<select id="selectLogin" resultType="string" parameterType="String">
 		SELECT name FROM testData WHERE id= #{no}
 	</select>
 	
-	<select id="selectTableNumbering" resultType="int">
-		select COUNT(id)  from member
-	</select>
 	
-	<insert id="insertJoinMember" parameterType="com.dao.MemberDao"> 
-        INSERT INTO member (id, nm, userId, addr1, addr2, pno, regDt, regId, updateDt, updateId) VALUES (#{id}, #{nm}, #{userId}, #{addr1}, #{addr2}, #{pno}, now(), 99999, now(), 99999) 
-    </insert>
+	<!-- CRUD Update -->
+	<update id="updateMemeberPno" parameterType="com.dao.MemberDao">
+		UPDATE member
+		SET pno = #{pno}
+		WHERE id = #{id}
+	</update>
+	
+	<update id="updateMemeberAddr" parameterType="com.dao.MemberDao">
+		UPDATE member
+		SET addr1 = #{addr1}, addr2 = #{addr2}
+		WHERE id = #{id}
+	</update>
+	
+	<!-- CRUD Delete -->
+
 	
 </mapper>
