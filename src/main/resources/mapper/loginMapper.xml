@@ -11,7 +11,7 @@
 		select COUNT(id)  from member
 	</select>
 	
-	<insert id="insertJoinMember" parameterType="com.dto.MemberDto"> 
+	<insert id="insertJoinMember" parameterType="com.dao.MemberDao"> 
         INSERT INTO member (id, nm, userId, addr1, addr2, pno, regDt, regId, updateDt, updateId) VALUES (#{id}, #{nm}, #{userId}, #{addr1}, #{addr2}, #{pno}, now(), 99999, now(), 99999) 
     </insert>
 	

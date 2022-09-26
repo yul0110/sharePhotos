@@ -1,13 +1,29 @@
 package com.dao;
 
-import java.util.List;
+import java.util.Date;
 
-import org.apache.ibatis.annotations.Mapper;
+import lombok.Data;
 
-import com.vo.Member;
+@Data
+public class MemberDao {
+	
+	
+	//멤버id
+	private Integer id;
+	
+	//이름
+	private String nm;
+	
+	//유저아이디
+	private String userId;
+	
+	//주소값
+	private String addr1;
+	
+	//주소 나머지
+	private String addr2;
+	
+	//휴대폰 번호
+	private String pno;
 
-@Mapper
-public interface MemberDAO {
-
-	public List<Member> MemberList();
 }

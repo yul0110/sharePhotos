@@ -2,7 +2,7 @@ package com.mapper;
 
 import org.apache.ibatis.annotations.Mapper;
 
-import com.dto.MemberDto;
+import com.dao.MemberDao;
 
 @Mapper
 public interface LoginMapper {
@@ -11,5 +11,5 @@ public interface LoginMapper {
 	
 	String selectLogin(String no);
 	
-	int insertJoinMember(MemberDto memberDto);
+	int insertJoinMember(MemberDao memberDao);
 }

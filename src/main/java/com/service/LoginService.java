@@ -1,11 +1,11 @@
 package com.service;
 
-import com.dto.MemberDto;
+import com.dao.MemberDao;
 
 public interface LoginService {
 
 
 	String selectLogin(String no);
 
-	int insertJoinMember(MemberDto memberDto);
+	int insertJoinMember(MemberDao memberDao);
 }
