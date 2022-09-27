@@ -3,38 +3,42 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>PhotoFolio Bootstrap Template - Contact</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
-  <!-- Favicons -->
-  <link href="resources/images/favicon.png" rel="icon">
-  <link href="resources/images/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="resources/css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="resources/css/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="resources/css/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="resources/css/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="resources/css/aos/aos.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="resources/css/main.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: PhotoFolio - v1.0.0
-  * Template URL: https://bootstrapmade.com/photofolio-bootstrap-photography-website-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	
+	<title>PhotoFolio Bootstrap Template - Contact</title>
+	<meta content="" name="description">
+	<meta content="" name="keywords">
+	
+	<!-- Favicons -->
+	<link href="resources/images/favicon.png" rel="icon">
+	<link href="resources/images/apple-touch-icon.png" rel="apple-touch-icon">
+	
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+	
+	<!-- js Files -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="resources/js/login/join.js"></script>
+	
+	<!-- Vendor CSS Files -->
+	<link href="resources/css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="resources/css/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+	<link href="resources/css/swiper/swiper-bundle.min.css" rel="stylesheet">
+	<link href="resources/css/glightbox/css/glightbox.min.css" rel="stylesheet">
+	<link href="resources/css/aos/aos.css" rel="stylesheet">
+	
+	<!-- Template Main CSS File -->
+	<link href="resources/css/main.css" rel="stylesheet">
+	
+	<!-- =======================================================
+	* Template Name: PhotoFolio - v1.0.0
+	* Template URL: https://bootstrapmade.com/photofolio-bootstrap-photography-website-template/
+	* Author: BootstrapMade.com
+	* License: https://bootstrapmade.com/license/
+	======================================================== -->
 </head>
 
 <body>
@@ -104,23 +108,25 @@
       <div class="container">
         <div class="row justify-content-center mt-4">
           <div class="col-lg-9">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form action="forms/contact.php" method="post" class="php-email-form">
               <div class="row">
                 <div class="col-md-6 form-group" style="margin:auto;">
                   <h5 style="font-size:15px;">아이디</h5>
-                  <input type="text" name="name" class="form-control" id="name" placeholder="6~10자 영문,숫자" required>
+                  <input type="text" name="userId" class="form-control" id="name" placeholder="6~10자 영문,숫자" required>
                   <br>
                   <h5 style="font-size:15px;">비밀번호</h5>
-                  <input type="text" name="name" class="form-control" id="name" placeholder="6~12자 영문,숫자,특수문자" required>
+                  <input type="password" name="name" class="form-control" id="name" placeholder="6~12자 영문,숫자,특수문자" required>
                   <br>
                   <h5 style="font-size:15px;">이름</h5>
-                  <input type="text" name="name" class="form-control" id="name" placeholder="홍길동" required>
+                  <input type="text" name="nm" class="form-control" id="name" placeholder="홍길동" required>
                   <br>
                   <h5 style="font-size:15px;">주소</h5>
-                  <input type="text" name="name" class="form-control" id="name" placeholder="강남구" required>
+                  <input type="text" name="addr1" class="form-control" id="name" placeholder="강남구" required>
+                  <br>
+                  <input type="text" name="addr2" class="form-control" id="name" placeholder="나머지주소" required>
                   <br>
 	              <h5 style="font-size:15px;">휴대폰 번호</h5>
-				  <input type="text" name="name" class="form-control" id="name" placeholder="01012345678" required>
+				  <input type="text" name="addr1" class="form-control" id="name" placeholder="01012345678" required>
 				   <br>
 	              <button type="submit">휴대폰 인증</button>
               </div>
@@ -129,7 +135,7 @@
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
-              <div class="text-center"><button type="submit">join us</button></div>
+              <div class="text-center"><button type="button">회원가입</button></div>
               <br>
               <br>
             </form><!-- End Contact Form -->

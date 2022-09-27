@@ -6,9 +6,12 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.dao.MemberDao;
@@ -40,7 +43,14 @@ public class LoginController {
 		return "login/login";
 	}
 	
-	
+	@ResponseBody
+	@PostMapping(value = "/joinusAjax")
+	public void imageUpload(MemberDao memberDao, Model model) {
+
+		System.out.println("브래이크");
+		
+		model.addAttribute("member", memberDao);
+    }
 	
 	
 	//로그인 시도
@@ -81,13 +91,13 @@ public class LoginController {
 		
 		System.out.println("브래이크");
 		
-		int result = loginService.insertJoinMember(memberDao);
-		
-		if(result == 1) {
-			System.out.println("회원가입 완료");
-		}else if(result == 0){
-			System.out.println("등록 실패");
-		}
+//		int result = loginService.insertJoinMember(memberDao);
+//		
+//		if(result == 1) {
+//			System.out.println("회원가입 완료");
+//		}else if(result == 0){
+//			System.out.println("등록 실패");
+//		}
 		
 		return "login/join";
 	}
