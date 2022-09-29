@@ -23,13 +23,25 @@
 	}
 	
 	//ajax 간편 구현
-	yul.common.baseAjax = function(sendData, method) {
+	yul.common.baseAjax = function(url, sendData, method) {
+		
+		var returnData;
+		
+		//자바스크립트 ajax
 		if(sendData != undefined && sendData != " "){
-		 	alert("에이작스 사용");
+		 	console.log("ajax", url, sendData);
+		    const xhr = new XMLHttpRequest();
+		    xhr.open(method, url);
+		    xhr.setRequestHeader("Content-type", "application/json; charset=UTF-8;");
+		    xhr.responseType = "json";
+		    xhr.onload = function(e) {
+		        console.log(this, e);
+		    };
+		    xhr.send(JSON.stringify(sendData));
 			
-		}else{
-			console.log("데이터가 존재하지 않거나 잘못된 데이터 입니다.");			
 		}
+		
+		return returnData;
 	}
  	
  	//popup창 간편 구현

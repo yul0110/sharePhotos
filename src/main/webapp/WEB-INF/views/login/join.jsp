@@ -20,6 +20,8 @@
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 	
 	<!-- js Files -->
+	
+	<!-- 제이쿼리를 사용할수있게 링크를준 js -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script src="resources/js/common/base.js"></script>
 	<script src="resources/js/common/common.js"></script>
@@ -110,34 +112,36 @@
       <div class="container">
         <div class="row justify-content-center mt-4">
           <div class="col-lg-9">
-            <form action="forms/contact.php" method="post" class="php-email-form">
+            <form action="/joinusAjax" id='joinForm' name='joinForm' method="post" class="php-email-form">
               <div class="row">
                 <div class="col-md-6 form-group" style="margin:auto;">
                   <h5 style="font-size:15px;">아이디</h5>
-                  <input type="text" name="userId" class="form-control" id="name" placeholder="6~10자 영문,숫자" required>
+                  <input type="text" name="userId" class="form-control" id="userId" placeholder="6~10자 영문,숫자" maxlength='10' required>
                   <br>
                   <h5 style="font-size:15px;">비밀번호</h5>
-                  <input type="password" name="name" class="form-control" id="name" placeholder="6~12자 영문,숫자,특수문자" required>
+                  <input type="password" name="password" class="form-control" id="pw" placeholder="6~12자 영문,숫자,특수문자" maxlength='12' required>
+                  <br>
+                  <input type="password" name="password_copy" class="form-control" id="pwc" placeholder="6~12자 영문,숫자,특수문자" maxlength='12' required>
                   <br>
                   <h5 style="font-size:15px;">이름</h5>
-                  <input type="text" name="nm" class="form-control" id="name" placeholder="홍길동" required>
+                  <input type="text" name="nm" class="form-control" id="nm" placeholder="홍길동" maxlength='20' required>
                   <br>
                   <h5 style="font-size:15px;">주소</h5>
-                  <input type="text" name="addr1" class="form-control" id="name" placeholder="강남구" required>
+                  <input type="text" name="addr1" class="form-control" id="addr1" placeholder="강남구" maxlength='50' required>
                   <br>
-                  <input type="text" name="addr2" class="form-control" id="name" placeholder="나머지주소" required>
+                  <input type="text" name="addr2" class="form-control" id="addr2" placeholder="나머지주소" maxlength='100' required>
                   <br>
 	              <h5 style="font-size:15px;">휴대폰 번호</h5>
-				  <input type="text" name="addr1" class="form-control" id="name" placeholder="01012345678" required>
+				  <input type="text" name="pno" class="form-control" id="pno" placeholder="01012345678" maxlength='13' required>
 				   <br>
-	              <button type="submit">휴대폰 인증</button>
+	              <button type="button">휴대폰 인증</button>
               </div>
               <div class="my-3">
                 <div class="loading">Loading</div>
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
-              <div class="text-center"><button type="button">회원가입</button></div>
+              <div class="text-center"><button id="joinusAjax" type="button">회원가입</button></div>
               <br>
               <br>
             </form><!-- End Contact Form -->

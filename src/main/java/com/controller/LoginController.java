@@ -43,14 +43,18 @@ public class LoginController {
 		return "login/login";
 	}
 	
-	@ResponseBody
 	@PostMapping(value = "/joinusAjax")
-	public void imageUpload(@RequestParam MemberDao memberDao, Model model) {
-
-		System.out.println("브래이크");
+	public void abandonedTag(@RequestBody MemberDao memberDao) {
 		
-		model.addAttribute("member", memberDao);
-    }
+		int result = loginService.insertJoinMember(memberDao);
+		
+		if(result == 1) {
+			System.out.println("회원가입 완료");
+		}else if(result == 0){
+			System.out.println("등록 실패");
+		}
+		
+	}
 	
 	
 	//로그인 시도

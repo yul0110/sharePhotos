@@ -25,7 +25,9 @@
 	
 	<!-- js Files -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-	
+	<script src="resources/js/common/base.js"></script>
+	<script src="resources/js/common/common.js"></script>
+	<script src="resources/js/login/login.js"></script>
 	
 	
 	<!-- Vendor CSS Files -->

@@ -5,7 +5,7 @@
 (function() {
 	
 	 yul.page = function() {
-		 this.form = document.forms.joinForm;
+		 this.form = document.forms.major;
 		 
 		 // js 파일이 로드되면 메소드를 실행시킴
 		 this.init();
@@ -22,36 +22,14 @@
 	 *작동할 이벤트를 프로토 타입으로 세팅
 	 */
 	 yul.page.prototype.bindForm = function() {
-		
-	 	$('#joinusAjax').on('click', function(e) {
+	 	$(this.form).on('submit', function(e) {
 	 		e.preventDefault();
-	 		
-	 		let formUserId = $("#userId").val();
-	 		let formNm = $("#nm").val();
-	 		let formPw = $("#pw").val();
-	 		let formAddr1 = $("#addr1").val();
-	 		let formAddr2 = $("#addr2").val();
-	 		let formpno = $("#pno").val();
-	 		
-	 		var parameterData = {
-							nm : formNm,
-							pw : formPw,
-							userId : formUserId,
-							addr1: formAddr1,
-							addr2: formAddr2,
-							pno : formpno} 
-	 		
-	 		var result;
-	 		
-	 		result = yul.common.baseAjax("/joinusAjax", parameterData, "post");
-	 		
-	 		console.log(result);
-	 		
+	 		cl.page.getList();
 		 });
 	
 	 };
 	 $(function() {
-	 	yul.page = new yul.page();
+	 	yul.page = new cl.page();
 	 });
 	 
 	 return yul.page;
