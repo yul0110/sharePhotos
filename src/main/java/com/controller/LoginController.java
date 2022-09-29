@@ -45,7 +45,7 @@ public class LoginController {
 	
 	@ResponseBody
 	@PostMapping(value = "/joinusAjax")
-	public void imageUpload(MemberDao memberDao, Model model) {
+	public void imageUpload(@RequestParam MemberDao memberDao, Model model) {
 
 		System.out.println("브래이크");
 		
