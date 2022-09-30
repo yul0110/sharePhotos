@@ -115,24 +115,24 @@
             <form action="/joinusAjax" id='joinForm' name='joinForm' method="post" class="php-email-form">
               <div class="row">
                 <div class="col-md-6 form-group" style="margin:auto;">
-                  <h5 style="font-size:15px;">아이디</h5>
-                  <input type="text" name="userId" class="form-control" id="userId" placeholder="6~10자 영문,숫자" maxlength='10' required>
+                  <h5 id="userIdError" style="font-size:15px;">*아이디 <strong class="errorMsg" style="color:red;"></strong></h5>
+                  <input type="text" name="userId" class="form-control" id="userId" placeholder="8~30자 영문,숫자" maxlength='30' style="text-transform: lowercase;"  required>
                   <br>
-                  <h5 style="font-size:15px;">비밀번호</h5>
-                  <input type="password" name="password" class="form-control" id="pw" placeholder="6~12자 영문,숫자,특수문자" maxlength='12' required>
+                  <h5 id="pwError" style="font-size:15px;">*비밀번호 <strong class="errorMsg" style="color:red;"></strong></h5>
+                  <input type="password" name="pw" class="form-control" id="pw" placeholder="8~30자 영문,숫자,특수문자" maxlength='30' required>
                   <br>
-                  <input type="password" name="password_copy" class="form-control" id="pwc" placeholder="6~12자 영문,숫자,특수문자" maxlength='12' required>
+                  <input type="password" name="pwc" class="form-control" id="pwc" placeholder="8~30자 영문,숫자,특수문자" maxlength='30' required>
                   <br>
-                  <h5 style="font-size:15px;">이름</h5>
+                  <h5 style="font-size:15px;">*이름 <strong class="errorMsg" style="color:red;"></strong></h5>
                   <input type="text" name="nm" class="form-control" id="nm" placeholder="홍길동" maxlength='20' required>
                   <br>
-                  <h5 style="font-size:15px;">주소</h5>
+                  <h5 style="font-size:15px;">*주소 <strong class="errorMsg" style="color:red;"></strong></h5>
                   <input type="text" name="addr1" class="form-control" id="addr1" placeholder="강남구" maxlength='50' required>
                   <br>
                   <input type="text" name="addr2" class="form-control" id="addr2" placeholder="나머지주소" maxlength='100' required>
                   <br>
-	              <h5 style="font-size:15px;">휴대폰 번호</h5>
-				  <input type="text" name="pno" class="form-control" id="pno" placeholder="01012345678" maxlength='13' required>
+	              <h5 style="font-size:15px;">*휴대폰 번호 <strong class="errorMsg" style="color:red;"></strong></h5>
+				  <input type="text" name="pno" class="form-control" id="pno" placeholder="01012345678" maxlength='11' required>
 				   <br>
 	              <button type="button">휴대폰 인증</button>
               </div>

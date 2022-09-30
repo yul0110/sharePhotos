@@ -43,8 +43,8 @@ public class LoginController {
 		return "login/login";
 	}
 	
-	@PostMapping(value = "/joinusAjax")
-	public void abandonedTag(@RequestBody MemberDao memberDao) {
+	@RequestMapping(value = "/joinusAjax")
+	public String joinusAjax(@RequestBody MemberDao memberDao, Model model) {
 		
 		int result = loginService.insertJoinMember(memberDao);
 		
@@ -54,6 +54,9 @@ public class LoginController {
 			System.out.println("등록 실패");
 		}
 		
+		model.addAttribute("memberDao", memberDao);
+		
+		return "login/login";
 	}
 	
 	
