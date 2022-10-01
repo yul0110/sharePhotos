@@ -96,7 +96,7 @@ public class LoginController {
 	@RequestMapping(value = "/join", method = RequestMethod.GET)
 	public String join(MemberDao memberDao) {
 		
-		System.out.println("브래이크");
+		System.out.println("브레이크");
 		
 //		int result = loginService.insertJoinMember(memberDao);
 //		

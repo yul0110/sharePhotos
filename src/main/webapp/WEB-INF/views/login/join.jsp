@@ -123,15 +123,16 @@
                   <br>
                   <input type="password" name="pwc" class="form-control" id="pwc" placeholder="8~30자 영문,숫자,특수문자" maxlength='30' required>
                   <br>
-                  <h5 style="font-size:15px;">*이름 <strong class="errorMsg" style="color:red;"></strong></h5>
+                  <h5 id="nmError"style="font-size:15px;">*이름 <strong class="errorMsg" style="color:red;"></strong></h5>
                   <input type="text" name="nm" class="form-control" id="nm" placeholder="홍길동" maxlength='20' required>
                   <br>
-                  <h5 style="font-size:15px;">*주소 <strong class="errorMsg" style="color:red;"></strong></h5>
+                  <h5 id="addr1Error"style="font-size:15px;">*주소 <strong class="errorMsg" style="color:red;"></strong></h5>
                   <input type="text" name="addr1" class="form-control" id="addr1" placeholder="강남구" maxlength='50' required>
                   <br>
+                   <h5 id="addr2Error"style="font-size:15px;">*상세주소 <strong class="errorMsg" style="color:red;"></strong></h5>
                   <input type="text" name="addr2" class="form-control" id="addr2" placeholder="나머지주소" maxlength='100' required>
                   <br>
-	              <h5 style="font-size:15px;">*휴대폰 번호 <strong class="errorMsg" style="color:red;"></strong></h5>
+	              <h5 id="pnoError"style="font-size:15px;">*휴대폰 번호 <strong class="errorMsg" style="color:red;"></strong></h5>
 				  <input type="text" name="pno" class="form-control" id="pno" placeholder="01012345678" maxlength='11' required>
 				   <br>
 	              <button type="button">휴대폰 인증</button>

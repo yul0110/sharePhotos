@@ -47,32 +47,28 @@
 			
 			//부모 메소드를 정지시키는 방법 1
 			//if (!yul.common.valid("lenMin", formUserId.length, "아이디는 최소 8이상 작성해주세요.", 8)) return;
-			
-			
+					
 			yul.common.valid("kor", formUserTarget, "아이디는 한글이 불가합니다.");
-			yul.common.valid("lenMin", formUserTarget, "8이상 작성해주세요.", 8);
-			yul.common.valid("lenMax", formUserTarget, "아이디는 최대 30자 이내로 작성해주세요.", 31);
-			yul.common.valid("lenMin", formPwTarget, "최소 8이상 작성해주세요.", 8);
-			yul.common.valid("lenMax", formPwTarget, "최대 30자 이내로 작성해주세요.", 31);
-			yul.common.valid("lenMin", formPwcTarget, "최소 8이상 작성해주세요.", 8);
-			yul.common.valid("lenMax", formPwcTarget, "최대 30자 이내로 작성해주세요.", 31);
+			yul.common.valid("lenMin", formUserTarget, "8이상 입력해주세요.", 8);
+			yul.common.valid("lenMax", formUserTarget, "아이디는 최대 30자 이내로 입력해주세요.", 31);
+			yul.common.valid("lenMin", formPwTarget, "최소 8이상 입력해주세요.", 8);
+			yul.common.valid("lenMax", formPwTarget, "최대 30자 이내로 입력해주세요.", 31);
+			yul.common.valid("lenMin", formPwcTarget, "최소 8이상 입력해주세요.", 8);
+			yul.common.valid("lenMax", formPwcTarget, "최대 30자 이내로 입력해주세요.", 31);
 			if(formPwTarget.val() != formPwcTarget.val()){
 				let errorMsgSelect = formPwTarget.attr('id'); 
 				let errorMsgClass  = '#'+errorMsgSelect+'Error';
 				$(errorMsgClass).children('strong').text("비밀번호가 틀립니다.");
 				throw "비밀번호가 틀립니다."
 			}
-			/*
-			yul.common.valid("lenMax", formNm.length, 21, "이름은 최대 20자 이내로 작성해주세요.");
-			yul.common.valid("lenMin", formNm.length, 2, "이름은 최소 2자 이상 작성해주세요.");
-			yul.common.valid("lenMax", formAddr1.length, 51, "주소는 최대 50자 이내로 작성해주세요.");
-			yul.common.valid("lenMin", formAddr1.length, 20, "주소는 최소 20자 이상 작성해주세요.");
-			yul.common.valid("lenMax", formAddr2.length, 101, "나머지주소는 최대 100자 이내로 작성해주세요.");
-			yul.common.valid("lenMin", formAddr2.length, 8, "나머지주소는 최소 8자 이상 작성해주세요.");
-			yul.common.valid("lenMax", formpno.length, 12, "휴대폰 번호를 정확히 입력해주세요.");
-			yul.common.valid("lenMin", formpno.length, 11, "휴대폰 번호를 확인해주세요.");
-			*/
-	 		
+			yul.common.valid("lenMin", formNmTarget, "최소 2자 이상 입력해주세요.", 2);
+			yul.common.valid("lenMax", formNmTarget, "최대 20자 이내로 입력해주세요.", 21);
+			yul.common.valid("lenMin", formAddr1Target, "최소 20자 이상 입력해주세요.", 20);
+			yul.common.valid("lenMax", formAddr1Target, "최대 50자 이내로 입력해주세요.", 51);			
+			yul.common.valid("lenMax", formAddr2Target, "최대 100자 이내로 입력해주세요.", 101);
+			yul.common.valid("lenMin", formAddr2Target, "최소 8자 이상 입력해주세요.", 8);
+			yul.common.valid("lenMax", formpnoTarget, "정확히 입력해주세요.", 12);
+			yul.common.valid("lenMin", formpnoTarget, "휴대폰 번호를 확인해주세요.", 11);
 	 		
 	 		
 	 		var parameterData = {
