@@ -71,7 +71,7 @@
               </li>
             </ul>
           </li>
-          <li><a href="#" class="active">앨친관리</a></li>
+          <li><a href="#" class="active">친구들</a></li>
           <li><a href="#">고객센터</a></li>
         </ul>
       </nav><!-- .navbar -->

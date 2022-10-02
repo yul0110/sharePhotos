@@ -86,7 +86,7 @@
               </li>
             </ul>
           </li>
-          <li><a href="/services">앨친관리</a></li>
+          <li><a href="/services">친구들</a></li>
           <li><a href="/contact" class="active">고객센터</a></li>
         </ul>
       </nav><!-- .navbar -->
