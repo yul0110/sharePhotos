@@ -15,20 +15,20 @@
 	 */
 	 // prototype 프로토 타입
 	 yul.page.prototype.init = function() {
-	 	this.bindForm() // bind form submit event
+	 	this.clickEvent() // bind form submit event
 	 }
 	 
 	 /**
 	 *작동할 이벤트를 프로토 타입으로 세팅
 	 */
-	 yul.page.prototype.bindForm = function() {
+	 yul.page.prototype.clickEvent = function() {
 		
+		//회원가입 시도 클릭 이벤트
 	 	$('#joinusAjax').on('click', function(e) {
 	 		e.preventDefault();
 	 		
 	 		var result;
 	 		
-//	 		let formUserTarget = $("#userId").val().toLowerCase();
 	 		let formUserTarget = $("#userId");
 	 		let formPwTarget = $("#pw");
 	 		let formPwcTarget = $("#pwc");
@@ -38,16 +38,6 @@
 	 		let formpnoTarget = $("#pno");
 	 			 		
 	 		//validation 검증
-	 		
-	 		//유저아이디 길이 검증
-	 		//if(formUserId.length > 31){
-			//	alert("아이디는 30자 이내로 작성해주세요.");
-			//	return;
-			//}
-			
-			//부모 메소드를 정지시키는 방법 1
-			//if (!yul.common.valid("lenMin", formUserId.length, "아이디는 최소 8이상 작성해주세요.", 8)) return;
-					
 			yul.common.valid("kor", formUserTarget, "아이디는 한글이 불가합니다.");
 			yul.common.valid("lenMin", formUserTarget, "8이상 입력해주세요.", 8);
 			yul.common.valid("lenMax", formUserTarget, "아이디는 최대 30자 이내로 입력해주세요.", 31);
@@ -66,7 +56,6 @@
 			yul.common.valid("lenMin", formAddr1Target, "최소 20자 이상 입력해주세요.", 20);
 			yul.common.valid("lenMax", formAddr1Target, "최대 50자 이내로 입력해주세요.", 51);			
 			yul.common.valid("lenMax", formAddr2Target, "최대 100자 이내로 입력해주세요.", 101);
-			yul.common.valid("lenMin", formAddr2Target, "최소 8자 이상 입력해주세요.", 8);
 			yul.common.valid("lenMax", formpnoTarget, "정확히 입력해주세요.", 12);
 			yul.common.valid("lenMin", formpnoTarget, "휴대폰 번호를 확인해주세요.", 11);
 	 		
@@ -85,8 +74,23 @@
 	 		console.log(result);
 	 		
 		 });
-	
+		
+		
+		//주소 zonecode 팝업이벤트
+		$('#addr1').on('click', function(e) {
+	 		e.preventDefault();
+	 		
+	 		new daum.Postcode({
+		        oncomplete: function(data) {
+					//주소에 값을 넣음
+					var fullAddr = data.address + ' (' +data.buildingName + ')';
+					$('#addr1').attr('value',fullAddr);
+		        }
+		    }).open();
+		});
+		
 	 };
+	 
 	 $(function() {
 	 	yul.page = new yul.page();
 	 });

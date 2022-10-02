@@ -15,21 +15,25 @@
 	 */
 	 // prototype 프로토 타입
 	 yul.page.prototype.init = function() {
-	 	this.bindForm() // bind form submit event
+	 	this.clickEvent() // bind form submit event
 	 }
 	 
 	 /**
 	 *작동할 이벤트를 프로토 타입으로 세팅
 	 */
-	 yul.page.prototype.bindForm = function() {
-	 	$(this.form).on('submit', function(e) {
+	 yul.page.prototype.clickEvent = function() {
+		
+	 	$('#popOpen').on('click', function(e) {
 	 		e.preventDefault();
-	 		cl.page.getList();
-		 });
-	
+	 		
+	 		yul.layerPop.basePop();
+	 		
+		});
+			
 	 };
+	 
 	 $(function() {
-	 	yul.page = new cl.page();
+	 	yul.page = new yul.page();
 	 });
 	 
 	 return yul.page;

@@ -75,16 +75,7 @@
 		
 	}
 	
-	//zipcode 간편 생성
-	yul.common.zipcode = function(setTag) {
-		if(setTag != undefined && setTag != " "){
-		 	alert("집코드 라이브러리");
-		}else{
-			console.log("zipcode 적용에 실패 하였습니다.");
-		}
-	}
-	
-	//ajax 자바스크립트 구현
+	//ajax 퓨터/바닐라 자바스크립트 구현
 	yul.common.baseAjax = function(url, sendData, method) {
 		
 		var returnData;
@@ -147,15 +138,6 @@
 		
 		
 		return returnData;
-	}
- 	
- 	//popup창 간편 구현
-	yul.common.basePopup = function(setTag, msg) {
-	 	if(setTag != undefined && setTag != " "){
-		 	alert("팝업창 세팅");
-		}else{
-			console.log("팝업창 생성을 실패하였습니다.");			
-		}
 	}
  	
 })();
