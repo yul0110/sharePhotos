@@ -9,21 +9,38 @@ import com.service.AlbumService;
 
 @Controller
 public class AlbumController {
-
-	@Autowired
-	AlbumService albumService;
-	//내가 만든 앨범 페이지
+	
+	//마이페이지 같은 앨범 페이지
 	@RequestMapping(value = "/myAlbum", method = RequestMethod.GET)
-	public String myAlbum(String no) {
+	public String myAlbumPage() {
 		
-  		String ab = albumService.selectAlbum(no);
-
-		System.out.println(ab+"이쁜이");
 	
 		return "album/myAlbum";
 	}
 	
+	//앨범 페이지
+	@RequestMapping(value = "/album", method = RequestMethod.GET)
+	public String albumPage() {
+		
 	
+		return "album/album";
+	}
+	
+	//나에게 쉐어해준 앨범 페이지
+	@RequestMapping(value = "/shareAlbum", method = RequestMethod.GET)
+	public String shareAlbumPage() {
+		
+	
+		return "album/shareAlbum";
+	}
+	
+	//사진 페이지
+	@RequestMapping(value = "/photoView", method = RequestMethod.GET)
+	public String photoViewPage() {
+		
+	
+		return "album/photoView";
+	}
 	
 	
 	

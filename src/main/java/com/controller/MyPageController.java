@@ -9,18 +9,23 @@ import com.service.MyPageService;
 
 @Controller
 public class MyPageController {
-
-	@Autowired
-	MyPageService myPageService;
 	
 	@RequestMapping(value = "/myPage", method = RequestMethod.GET)
-	public String myPage(String no) {
+	public String myPagePage() {
 		
-		String ab = myPageService.selectMyPage(no);
-
-		System.out.println(ab+"몽이바보");
+		return "myPage/myPage";
+	}	
+	
+	@RequestMapping(value = "/memberUpdate", method = RequestMethod.GET)
+	public String memberUpdatePage() {
 		
-		return "myPage/basic";
+		return "myPage/memberUpdate";
+	}	
+	
+	@RequestMapping(value = "/memberResign", method = RequestMethod.GET)
+	public String memberResignPage() {
+		
+		return "myPage/memberResign";
 	}	
 	
 }

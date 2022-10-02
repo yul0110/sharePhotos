@@ -9,17 +9,10 @@ import com.service.PayMentService;
 
 @Controller
 public class PayMentController {
-
-	@Autowired
-	PayMentService payMentService;
 	
 	@RequestMapping(value = "/payMent", method = RequestMethod.GET)
-	public String payMent(String no) {
+	public String payMentPage() {
 		
-		String ab = payMentService.selectPayMent(no);
-
-		System.out.println(ab+"이쁜이");
-			
 		return "payMent/service";
 	}	
 	
