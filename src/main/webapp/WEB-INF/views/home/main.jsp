@@ -54,7 +54,7 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a href="/" class="active">홈</a></li>
-          <li><a href="/myAlbum">사진관리</a></li>
+          <li><a href="/myAlbum">사진올리기</a></li>
           <li class="dropdown"><a href="/myAlbum"><span>앨범</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
               <li><a href="/album">앨범이름</a></li>

@@ -23,6 +23,7 @@
 	
 	<!-- 제이쿼리를 사용할수있게 링크를준 js -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
 	<script src="resources/js/common/base.js"></script>
 	<script src="resources/js/common/common.js"></script>
 	<script src="resources/js/login/join.js"></script>
@@ -61,7 +62,7 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a href="/">홈</a></li>
-          <li><a href="/myAlbum">사진관리</a></li>
+          <li><a href="/myAlbum">사진올리기</a></li>
           <li class="dropdown"><a href="#"><span>앨범</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
               <li><a href="/album">앨범</a></li>
@@ -127,7 +128,7 @@
                   <input type="text" name="nm" class="form-control" id="nm" placeholder="홍길동" maxlength='20' required>
                   <br>
                   <h5 id="addr1Error"style="font-size:15px;">*주소 <strong class="errorMsg" style="color:red;"></strong></h5>
-                  <input type="text" name="addr1" class="form-control" id="addr1" placeholder="강남구" maxlength='50' required>
+                  <input type="text" value="" name="addr1" class="form-control" id="addr1" placeholder="강남구" maxlength='50' required readonly>
                   <br>
                    <h5 id="addr2Error"style="font-size:15px;">*상세주소 <strong class="errorMsg" style="color:red;"></strong></h5>
                   <input type="text" name="addr2" class="form-control" id="addr2" placeholder="나머지주소" maxlength='100' required>

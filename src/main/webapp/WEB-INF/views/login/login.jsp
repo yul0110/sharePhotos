@@ -25,10 +25,14 @@
 	
 	<!-- js Files -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="http://code.jquery.com/ui/1.11.0/jquery-ui.js"></script> 
 	<script src="resources/js/common/base.js"></script>
 	<script src="resources/js/common/common.js"></script>
+	<script src="resources/js/common/layerPopup.js"></script>
 	<script src="resources/js/login/login.js"></script>
 	
+	<!-- CSS Files -->
+	<link href="resources/css/layerPopup.css" rel="stylesheet">
 	
 	<!-- Vendor CSS Files -->
 	<link href="resources/css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -64,7 +68,7 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a href="/">홈</a></li>
-          <li><a href="/myAlbum">사진관리</a></li>
+          <li><a href="/myAlbum">사진올리기</a></li>
           <li class="dropdown"><a href="#"><span>앨범</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
               <li><a href="/album">앨범</a></li>
@@ -209,6 +213,38 @@
 
   <!-- Template Main JS File -->
   <script src="resources/js/main.js"></script>
+
+
+
+	<button id='popOpen'>팝업</button>
+	<div style="height:1000px;"> </div>
+	
+	<!-- 팝업뜰때 배경 -->
+	<div id="mask"></div>
+	
+	<!--Popup Start -->
+	<div id="layerbox" class="layerpop"
+	    style="width: 700px; height: 350px;">
+	    <article class="layerpop_area">
+	    <div class="title">레이어팝업 타이틀</div>
+	    <a href="javascript:popupClose();" class="layerpop_close"
+	        id="layerbox_close"></a> <br>
+	    <div class="content">
+	    레이어 팝업 내용<br/>
+	    레이어 팝업 내용<br/>
+	    레이어 팝업 내용<br/>
+	    레이어 팝업 내용<br/>
+	    레이어 팝업 내용<br/>
+	    레이어 팝업 내용<br/>
+	    레이어 팝업 내용<br/>
+	    레이어 팝업 내용<br/>
+	
+	    </div>
+	    </article>
+	</div>
+	<!--Popup End -->
+
+
 
 </body>
 
