@@ -59,16 +59,15 @@ public class LoginController {
 		return "login/login";
 	}
 	
-	
 	//로그인 시도
-	@RequestMapping(value = "/loginCheck", method = RequestMethod.POST)
+	@RequestMapping(value = "/loginCheck", method = RequestMethod.GET)
 	public String loginCheck(ModelAndView modelAndView) {
 		
 		List<Member> memberList = testService.selectMemberList();
 		
 		
 		modelAndView.addObject("memberList", memberList);
-		return "login/login";
+		return "login/loginCheck";
 	}	
 	
 	//아이디 찾기 페이지
