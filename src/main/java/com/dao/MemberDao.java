@@ -14,6 +14,9 @@ public class MemberDao {
 	//이름
 	private String nm;
 	
+	//비밀번호
+	private String pw;
+	
 	//유저아이디
 	private String userId;
 	
@@ -23,7 +26,13 @@ public class MemberDao {
 	//주소 나머지
 	private String addr2;
 	
+	//우편번호
+	private String zonecode;
+	
 	//휴대폰 번호
 	private String pno;
+	
+	//인증
+	private String certified;
 
 }

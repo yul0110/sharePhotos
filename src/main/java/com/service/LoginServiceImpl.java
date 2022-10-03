@@ -13,11 +13,6 @@ public class LoginServiceImpl implements LoginService{
 	private LoginMapper loginMapper;
 	
 	@Override
-	public String selectLogin(String no) {
-		return loginMapper.selectLogin(no);
-	}
-
-	@Override
 	public int insertJoinMember(MemberDao memberDao) {
 
 		//다음 id값 적용

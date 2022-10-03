@@ -53,7 +53,6 @@
 			}
 			yul.common.valid("lenMin", formNmTarget, "최소 2자 이상 입력해주세요.", 2);
 			yul.common.valid("lenMax", formNmTarget, "최대 20자 이내로 입력해주세요.", 21);
-			yul.common.valid("lenMin", formAddr1Target, "최소 20자 이상 입력해주세요.", 20);
 			yul.common.valid("lenMax", formAddr1Target, "최대 50자 이내로 입력해주세요.", 51);			
 			yul.common.valid("lenMax", formAddr2Target, "최대 100자 이내로 입력해주세요.", 101);
 			yul.common.valid("lenMax", formpnoTarget, "정확히 입력해주세요.", 12);
@@ -61,15 +60,15 @@
 	 		
 	 		
 	 		var parameterData = {
-							nm : formNm,
-							pw : formPw,
-							userId : formUserId,
-							addr1: formAddr1,
-							addr2: formAddr2,
-							pno : formpno} 
+							userId : formUserTarget.val(),
+							pw : formPwTarget.val(),
+							nm : formNmTarget.val(),
+							addr1: formAddr1Target.val(),
+							addr2: formAddr2Target.val(),
+							pno : formpnoTarget.val()} 
 	 		
 	 		
-	 		result = yul.common.baseAjax("/joinusAjax", parameterData, "post");
+	 		result = yul.common.baseAjax("/joinAjax", parameterData, "post");
 	 		
 	 		console.log(result);
 	 		
@@ -83,7 +82,12 @@
 	 		new daum.Postcode({
 		        oncomplete: function(data) {
 					//주소에 값을 넣음
-					var fullAddr = data.address + ' (' +data.buildingName + ')';
+					var fullAddr;
+					if(data.buildingName == '' || data.buildingName == null){
+						fullAddr = data.address;
+					}else{
+						fullAddr = data.address + ' (' +data.buildingName + ')';
+					}
 					$('#addr1').attr('value',fullAddr);
 		        }
 		    }).open();

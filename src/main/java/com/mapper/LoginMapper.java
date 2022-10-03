@@ -7,9 +7,8 @@ import com.dao.MemberDao;
 @Mapper
 public interface LoginMapper {
 
+	//테이블 시퀀스 넘버링
 	int selectTableNumbering();
-	
-	String selectLogin(String no);
 	
 	int insertJoinMember(MemberDao memberDao);
 	

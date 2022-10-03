@@ -16,10 +16,6 @@ public class AlbumBoardController {
 	@RequestMapping(value = "/albumBoard", method = RequestMethod.GET)
 	public String albumBoard(String no) {
 		
-		String ab = albumBoardService.selectAlbumBoard(no);
-		
-		System.out.print(ab+"예쁜이");
-		
 		return "album/myAlbum";
 	}	
 	

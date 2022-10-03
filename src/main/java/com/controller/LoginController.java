@@ -44,18 +44,18 @@ public class LoginController {
 		return "login/join";
 	}
 	
-	@RequestMapping(value = "/joinAjax")
+	@RequestMapping(value = "/joinAjax", method = RequestMethod.POST)
 	public String joinusAjax(@RequestBody MemberDao memberDao, Model model) {
 		
-//		int result = loginService.insertJoinMember(memberDao);
-//		
-//		if(result == 1) {
-//			System.out.println("회원가입 완료");
-//		}else if(result == 0){
-//			System.out.println("등록 실패");
-//		}
-//		
-//		model.addAttribute("memberDao", memberDao);
+		int result = loginService.insertJoinMember(memberDao);
+		
+		if(result == 1) {
+			System.out.println("회원가입 완료");
+		}else if(result == 0){
+			System.out.println("등록 실패");
+		}
+		
+		model.addAttribute("memberDao", memberDao);
 		
 		return "login/login";
 	}
