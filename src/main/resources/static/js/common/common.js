@@ -1,8 +1,17 @@
 (function() {
 	
+	
  	yul.common = function() {
 		//공통메소드 생성
+		
+		
 	};
+	
+	
+	yul.common.callbackData = function(d) {
+				
+	}
+	
 	
 	//공통 검증
 	yul.common.valid = function(type, checkTaget, msg, rule) {
@@ -76,68 +85,42 @@
 	}
 	
 	//ajax 퓨터/바닐라 자바스크립트 구현
-	yul.common.baseAjax = function(url, sendData, method) {
+	yul.common.baseAjax = function(url, sendData, method, callback) {
 		
-		var returnData;
-		
-		//자바스크립트 ajax
-		if(sendData != undefined && sendData != " "){
-		 	console.log("ajax/XMLHttpRequest 객체 생성");
-		    const xhr = new XMLHttpRequest();
-		    
-		    //요청을 설정후 init setting
-		    xhr.open(method, url);
-		    
-		    //데이터 전송 타입 그리고 문자 setting
-		    xhr.setRequestHeader("Content-type", "application/json; charset=UTF-8;");
-		    
-		    //응답타입 setting
-		    xhr.responseType = "json";
-		    
-		    //ajax 작동중 이벤트
-		    xhr.onprogress = function () {
-			    console.log('LOADING', xhr.readyState);
-			    // readyState: 3
-			};
-			//ajax 작동완료
-		    xhr.onload = function(e) {
-		        console.log(this, e);
-		    };
-	
-		    //전송할 데이터 json 타입으로 변동후 전달
-		    xhr.send(JSON.stringify(sendData));
-		}
-		
-		return returnData;
-	}
-	
-	//ajax 제이쿼리
-	yul.common.baseJqueryAjax = function(url, sendData, method) {
-		
-		/*var returnData;
-		
-		$.ajax({
-			url: url,
-			type: method,
-			//전송할데이터
-			data: sendData,
-			dataType: 'json',
-			contentType : 'application/json; charset=UTF-8',
-			done: function(d) {
-				// 성공 시 동작
-				console.log(d);
-			},
-			fail: function(e) {
-				// 실패 시 동작
-				console.log(e);
-			},
-			always: function() {
-				// 성공하든 실패하든 항상 할 동작
+	 	console.log("ajax/XMLHttpRequest 객체 생성");
+		var type = method == undefined || method == '' ? 'post' : method;		 	
+	 	
+	 	//1. 전송객체 생성
+	    const xhr = new XMLHttpRequest();
+	    
+	    //2. init setting
+	    xhr.open(type, url);
+	    
+	    //3. 데이터 전송 타입 그리고 문자 setting
+	    xhr.setRequestHeader("Content-type", "application/json; charset=UTF-8;");
+	    
+	    //3-1.응답타입 setting
+	    xhr.responseType = "json";
+	    
+	    //ajax 작동중 이벤트
+	    xhr.onprogress = function () {
+		    //데이터 리턴 직전에 발동
+		};
+		//ajax 작동완료
+	    xhr.onload = function(e) {
+			
+			if(e.currentTarget.status == 200){
+				//성공콜백 함수
+		       	return callback(e.currentTarget.response);
+			}else{
+				alert('서버와통신에 실패 하였습니다. error-code : ' + e.currentTarget.status)
 			}
-		});*/
-		
-		
-		return returnData;
+				        
+	    };
+	    //전송할 데이터 json 타입으로 변동후 전달
+	    xhr.send(JSON.stringify(sendData));
 	}
- 	
+	
+
+	
 })();

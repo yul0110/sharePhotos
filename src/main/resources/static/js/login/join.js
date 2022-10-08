@@ -68,10 +68,15 @@
 							pno : formpnoTarget.val()} 
 	 		
 	 		
-	 		result = yul.common.baseAjax("/joinAjax", parameterData, "post");
-	 		
-	 		console.log(result);
-	 		
+	 		yul.common.baseAjax("/joinAjax", parameterData, 'post', function(d){
+																		if(d.result == 1){
+																			alert('회원가입에 성공 했습니다.');
+																		}else{
+																			alert('회원가입에 실패 했습니다.');
+																		}
+																		
+																		$('.col-lg-6').find('h2').html(d.msg);
+																	});
 		 });
 		
 		
