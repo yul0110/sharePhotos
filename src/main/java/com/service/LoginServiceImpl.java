@@ -33,4 +33,9 @@ public class LoginServiceImpl implements LoginService{
 		return loginMapper.updateMemeberAddr(memberDao);
 	}
 
+	@Override
+	public int selectIdCheck(MemberDao memberDao) {
+		return loginMapper.selectIdCheck(memberDao);
+	}
+
 }

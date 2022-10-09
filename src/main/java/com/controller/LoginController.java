@@ -44,6 +44,7 @@ public class LoginController {
 		return "login/join";
 	}
 	
+	//회원가입 Ajax
 	@RequestMapping(value = "/joinAjax", method = RequestMethod.POST)
 	public ModelAndView joinusAjax(@RequestBody MemberDao memberDao) {
 		
@@ -57,4 +58,17 @@ public class LoginController {
 	   mv.addObject("msg", memberDao.getNm()+"님");
 	   return mv;
 	}
-}
+	
+	
+	//아이디 체크 Ajax
+	@RequestMapping(value = "/idCheckAjax", method = RequestMethod.POST)
+	public ModelAndView idCheckAjax(@RequestBody MemberDao memberDao) {
+		
+	   ModelAndView mv = new ModelAndView("jsonView");
+	   int result = loginService.selectIdCheck(memberDao);
+	   mv.addObject("result",result);
+	   mv.addObject(memberDao.getUserId()+"사용 가능한 아이디 입니다.");
+	   return mv;
+	}
+}	   
+

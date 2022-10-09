@@ -117,8 +117,12 @@
               <div class="row">
                 <div class="col-md-6 form-group" style="margin:auto;">
                   <h5 id="userIdError" style="font-size:15px;">*아이디 <strong class="errorMsg" style="color:red;"></strong></h5>
-                  <input type="text" name="userId" class="form-control" id="userId" placeholder="8~30자 영문,숫자" maxlength='30' style="text-transform: lowercase;"  required>
+                  <input type="text" name="userId" class="form-control" id="userId" placeholder="8~30자 영문,숫자" maxlength='30' 
+                  style="text-transform: lowercase;" required>
                   <br>
+                  <button type="button" id="idCheck">중복확인</button>
+                  <br>    
+                  <br>     
                   <h5 id="pwError" style="font-size:15px;">*비밀번호 <strong class="errorMsg" style="color:red;"></strong></h5>
                   <input type="password" name="pw" class="form-control" id="pw" placeholder="8~30자 영문,숫자,특수문자" maxlength='30' required>
                   <br>

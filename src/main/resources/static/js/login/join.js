@@ -79,6 +79,32 @@
 																	});
 		 });
 		
+		//
+		$('#idCheck').on('click', function(e) {
+	 		e.preventDefault();
+	 		
+	 		
+	 		let formUserTarget = $("#userId");
+	 		
+	 		var idCheck = formUserTarget.val();
+	 		
+	 		yul.common.valid("kor", formUserTarget, "아이디는 한글이 불가합니다.");
+			yul.common.valid("lenMin", formUserTarget, "8이상 입력해주세요.", 8);
+			yul.common.valid("lenMax", formUserTarget, "아이디는 최대 30자 이내로 입력해주세요.", 31);
+	 		
+	 		var parameterData = { userId : formUserTarget.val() };
+							
+			yul.common.baseAjax("/idCheckAjax", parameterData, 'post', function(d){
+																		if(d.result == 0){
+																			alert('사용가능한 아이디 입니다.');
+																		}else{
+																			alert('중복된 아이디 입니다.');
+																		}
+																		console.log(d)
+																	});	
+	 		})
+		
+
 		
 		//주소 zonecode 팝업이벤트
 		$('#addr1').on('click', function(e) {
