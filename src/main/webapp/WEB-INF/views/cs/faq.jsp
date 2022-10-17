@@ -93,26 +93,120 @@
       <div class="container position-relative">
         <div class="row d-flex justify-content-center">
           <div class="col-lg-6 text-center">
-            <h2>Sample Inner Page</h2>
-            <p>Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo odio sint voluptas consequatur ut a odio voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi ratione sint. Sit quaerat ipsum dolorem.</p>
-
-            <a class="cta-btn" href="contact.html">Available for hire</a>
-
+            <h2>FAQ</h2>
+            <p>자주 묻는 질문을 확인해 보세요.</p>
           </div>
         </div>
       </div>
     </div><!-- End Page Header -->
 
-    <section class="sample-page">
-      <div class="container" data-aos="fade-up">
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container">
 
-        <p>
-          You can duplicate this sample page and create any number of inner pages you like!
-        </p>
+        <div class="row gy-4">
+
+          <div class="col-xl-3 col-md-6 d-flex">
+            <div class="service-item position-relative">
+              <i class="bi bi-activity"></i>
+              <h4><a href="" class="stretched-link">카테고리1</a></h4>
+              <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-3 col-md-6 d-flex">
+            <div class="service-item position-relative">
+              <i class="bi bi-bounding-box-circles"></i>
+              <h4><a href="" class="stretched-link">카테고리2</a></h4>
+              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-3 col-md-6 d-flex">
+            <div class="service-item position-relative">
+              <i class="bi bi-calendar4-week"></i>
+              <h4><a href="" class="stretched-link">카테고리3</a></h4>
+              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-3 col-md-6 d-flex">
+            <div class="service-item position-relative">
+              <i class="bi bi-broadcast"></i>
+              <h4><a href="" class="stretched-link">카테고리4</a></h4>
+              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
 
       </div>
-    </section>
+    </section><!-- End Services Section -->
 
+    <!-- ======= Pricing Section ======= -->
+    <section id="pricing" class="pricing">
+      <div class="container">
+
+        <div class="section-header">
+          <h2>faq</h2>
+          <p>(바뀌는 카테고리명)</p>
+        </div>
+
+        <div class="row gy-4 gx-lg-5">
+
+          <div class="col-lg-6">
+            <div class="pricing-item d-flex justify-content-between">
+              <h3>(질문)1(질문)1(질문)1(질문)1(질문)1(질문)1(질문)1(질문)1(질문)1(질문)1(질문)1(질문)1(질문)1(질문)1(질문)1(질문)1(질문)1(질문)1(질문)1(질문)1(질문)1(질문)1(질문)1(질문)1(질문)1(질문)1(질문)1</h3>
+            </div>
+            
+          </div><!-- End Pricing Item -->
+
+          <div class="col-lg-6">
+            <div class="pricing-item d-flex justify-content-between">
+              <h4>(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1</h4>
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <div class="col-lg-6">
+            <div class="pricing-item d-flex justify-content-between">
+              <h3>(질문)2</h3>
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <div class="col-lg-6">
+            <div class="pricing-item d-flex justify-content-between">
+              <h4>(답변)2</h4>
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <div class="col-lg-6">
+            <div class="pricing-item d-flex justify-content-between">
+              <h3>(질문)3</h3>
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <div class="col-lg-6">
+            <div class="pricing-item d-flex justify-content-between">
+              <h4>(답변)3</h4>
+            </div>
+          </div><!-- End Pricing Item -->
+
+        </div>
+    </section><!-- End Pricing Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+	 <div class="page-header d-flex align-items-center">
+      <div class="container position-relative">
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-6 text-center">
+            <h2>원하시는 답변이 없나요?</h2>
+			<br>
+            <a class="cta-btn" href="contact.html">1:1 문의</a>
+
+          </div>
+        </div>
+      </div>
+    </div><!-- End Page Header -->
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->

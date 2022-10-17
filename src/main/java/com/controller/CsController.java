@@ -12,28 +12,10 @@ import com.service.TestService;
 @Controller
 public class CsController {
 	
-	@RequestMapping(value = "/cs", method = RequestMethod.GET)
+	@RequestMapping(value = "/faq", method = RequestMethod.GET)
     public String mainPage() {
 		
-        return "home/main";
+        return "cs/faq";
     }
-	
-	@RequestMapping(value = "/qna", method = RequestMethod.GET)
-	public String qnaPage() {
-		
-		return "home/main";
-	}
-	
-	@RequestMapping(value = "/fna", method = RequestMethod.GET)
-	public String fnaPage() {
-		
-		return "home/main";
-	}
-	
-	@RequestMapping(value = "/ask", method = RequestMethod.GET)
-	public String askPage() {
-		
-		return "home/main";
-	}
 	
 }
