@@ -18,4 +18,9 @@ public class CsController {
         return "cs/faq";
     }
 	
+	@RequestMapping(value = "/inquiry", method = RequestMethod.GET)
+    public String inquiryPage() {
+		
+        return "cs/inquiry";
+    }
 }
