@@ -12,6 +12,7 @@ public class AlbumBoardServiceImpl implements AlbumBoardService{
 
 	@Autowired
 	private AlbumBoardMapper albumBoardMapper;	
+	
 	@Override
 	public String selectAlbumBoard(String no) {
 		return albumBoardMapper.selectAlbumBoard(no);

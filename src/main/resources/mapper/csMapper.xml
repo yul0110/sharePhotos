@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="com.mapper.CsMapper">
+
+
+	<!-- 테스트 조회 -->
+	<select id="selectCategoryCodeList" resultType="com.vo.Faq" >
+		SELECT DISTINCT categoryCode FROM faq 
+	</select>
+	
+	<!-- 모든 멤버리스트 조회 -->
+	<select id="selectMemberList" resultType="com.vo.Member">
+		select id, categoryCode, userId, addr1, addr2, pno, regDt, regId, updateDt, updateId from member
+	</select>	
+</mapper>

@@ -1,6 +1,9 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+
+
 <!DOCTYPE html>
 <html lang="en">
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 
 <head>
   <meta charset="utf-8">
@@ -15,16 +18,27 @@
   <link href="resources/images/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="resources/css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="resources/css/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="resources/css/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="resources/css/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="resources/css/aos/aos.css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+	
+	<!-- js Files -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="http://code.jquery.com/ui/1.11.0/jquery-ui.js"></script> 
+	<script src="resources/js/common/base.js"></script>
+	<script src="resources/js/common/common.js"></script>
+	<script src="resources/js/common/layerPopup.js"></script>
+	<script src="resources/js/cs/faq.js"></script>
+	
+	<!-- CSS Files -->
+	<link href="resources/css/layerPopup.css" rel="stylesheet">
+	
+	<!-- Vendor CSS Files -->
+	<link href="resources/css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="resources/css/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+	<link href="resources/css/swiper/swiper-bundle.min.css" rel="stylesheet">
+	<link href="resources/css/glightbox/css/glightbox.min.css" rel="stylesheet">
+	<link href="resources/css/aos/aos.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
   <link href="resources/css/main.css" rel="stylesheet">
@@ -111,37 +125,28 @@
 
         <div class="row gy-4">
 
-          <div class="col-xl-3 col-md-6 d-flex">
-            <div class="service-item position-relative">
-              <i class="bi bi-activity"></i>
-              <h4><a href="" class="stretched-link">카테고리1</a></h4>
-              <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-xl-3 col-md-6 d-flex">
-            <div class="service-item position-relative">
-              <i class="bi bi-bounding-box-circles"></i>
-              <h4><a href="" class="stretched-link">카테고리2</a></h4>
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-xl-3 col-md-6 d-flex">
-            <div class="service-item position-relative">
-              <i class="bi bi-calendar4-week"></i>
-              <h4><a href="" class="stretched-link">카테고리3</a></h4>
-              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-xl-3 col-md-6 d-flex">
-            <div class="service-item position-relative">
-              <i class="bi bi-broadcast"></i>
-              <h4><a href="" class="stretched-link">카테고리4</a></h4>
-              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
-            </div>
-          </div><!-- End Service Item -->
+          <c:forEach var="item" items="${faqCategoryList}">
+	          <div class="col-xl-3 col-md-6 d-flex">
+	            <div class="service-item position-relative faqClick" data-category="${item.categoryCode}">
+	              <i class="bi bi-activity"></i>
+	              <h4><a href="javascript:void(0);" class="stretched-link">
+	              	<c:if test="${item.categoryCode == 1}">
+	              		사진
+					</c:if>
+					<c:if test="${item.categoryCode == 2}">
+	              		앨범
+					</c:if>
+					<c:if test="${item.categoryCode == 3}">
+	              		회원
+					</c:if>
+					<c:if test="${item.categoryCode == 4}">
+	              		결제
+					</c:if>
+	              </a></h4>
+	              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+	            </div>
+	          </div><!-- End Service Item -->
+			</c:forEach>
 
         </div>
 
