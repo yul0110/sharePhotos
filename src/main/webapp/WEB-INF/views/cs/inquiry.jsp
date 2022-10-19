@@ -110,11 +110,11 @@
         <div class="row justify-content-center mt-4">
 
           <div class="col-lg-9">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form action="/" method="post" role="form" class="php-email-form">
               <div class="form-group mt-3">
               	<div>이메일</div>
               	<br>
-                <input type="email" class="form-control" name="subject" id="subject" placeholder="asdasd@sharePhotos.com" required>
+                <input type="email" class="form-control" name="subject" id="subject" placeholder="abcd@sharePhotos.com" required>
               </div>
               <div class="form-group mt-3">
               	<div>문의제목</div>

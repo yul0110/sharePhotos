@@ -42,4 +42,12 @@ public class AlbumController {
 		return "album/photoView";
 	}
 	
+	//친구페이지
+	@RequestMapping(value = "/shareFriends", method = RequestMethod.GET)
+	public String shareFriendsPage() {
+		
+	
+		return "album/shareFriends";
+	}
+	
 }

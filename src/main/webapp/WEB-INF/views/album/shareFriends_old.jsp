@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>PhotoFolio Bootstrap Template - About</title>
+  <title>PhotoFolio Bootstrap Template - Index</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -19,12 +19,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
+  <!-- static CSS Files    -->
   <link href="resources/css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="resources/css/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="resources/css/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="resources/css/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="resources/css/aos/aos.css" rel="stylesheet">
+
 
   <!-- Template Main CSS File -->
   <link href="resources/css/main.css" rel="stylesheet">
@@ -43,36 +44,41 @@
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center  me-auto me-lg-0">
+      <a href="/" class="logo d-flex align-items-center  me-auto me-lg-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="resources/images/logo.png" alt=""> -->
+        <!-- <img src="static/images/logo.png" alt=""> -->
         <i class="bi bi-camera"></i>
-        <h1>sharePhotos</h1>
+        <h1>SharePhotos</h1>
       </a>
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="/">홈</a></li>
-          <li><a href="/gallery" class="active">사진올리기</a></li>
-          <li class="dropdown"><a href="#"><span>앨범</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+          <li><a href="/" class="active">홈</a></li>
+          <li><a href="#">사진올리기</a></li>
+          <li class="dropdown"><a href="/myAlbum"><span>앨범</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
-              <li><a href="/gallery">앨범</a></li>
-              <li><a href="/gallery">앨범</a></li>
-              <li><a href="/gallery">앨범</a></li>
-              <li><a href="/gallery">앨범</a></li>
-              <li><a href="/gallery">앨범</a></li>
-              <li><a href="/gallery">앨범</a></li>
-              <li class="dropdown"><a href="#"><span>Sub 앨범</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+              <li><a href="/album">앨범이름</a></li>
+              <li><a href="/album">앨범이름</a></li>
+              <li><a href="/album">앨범이름</a></li>
+              <li><a href="/album">앨범이름</a></li>
+              <li><a href="/album">앨범이름</a></li>
+              <li><a href="/album">앨범이름</a></li>
+              <li class="dropdown"><a href="/shareAlbum"><span>공유된앨범</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
                 <ul>
-                  <li><a href="/gallery">Sub 앨범 1</a></li>
-                  <li><a href="/gallery">Sub 앨범 2</a></li>
-                  <li><a href="/gallery">Sub 앨범 3</a></li>
+                  <li><a href="/album">공유앨범 1</a></li>
+                  <li><a href="/album">공유앨범 2</a></li>
+                  <li><a href="/album">공유앨범 3</a></li>
                 </ul>
               </li>
             </ul>
           </li>
           <li><a href="#">친구들</a></li>
-          <li><a href="#">고객센터</a></li>
+          <li class="dropdown"><a href="/javascript:void();"><span>고객센터</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+          	<ul>
+              <li><a href="/inquiry">1:1문의</a></li>
+              <li><a href="/faq">FAQ</a></li>
+            </ul>
+          </li>
         </ul>
       </nav><!-- .navbar -->
 
@@ -93,7 +99,7 @@
       <div class="container position-relative">
         <div class="row d-flex justify-content-center">
           <div class="col-lg-6 text-center">
-            <h2>About</h2>
+            <h2>Services</h2>
             <p>Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo odio sint voluptas consequatur ut a odio voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi ratione sint. Sit quaerat ipsum dolorem.</p>
 
             <a class="cta-btn" href="contact.html">Available for hire</a>
@@ -103,51 +109,104 @@
       </div>
     </div><!-- End Page Header -->
 
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
       <div class="container">
 
-        <div class="row gy-4 justify-content-center">
-          <div class="col-lg-4">
-            <img src="resources/images/profile-img.jpg" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-5 content">
-            <h2>Professional Photographer from New York</h2>
-            <p class="fst-italic py-3">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
-            </p>
-            <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>1 May 1995</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.example.com</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+123 456 7890</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>New York, USA</span></li>
-                </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>30</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Master</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>PhEmailone:</strong> <span>email@example.com</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
-                </ul>
-              </div>
+        <div class="row gy-4">
+
+          <div class="col-xl-3 col-md-6 d-flex">
+            <div class="service-item position-relative">
+              <i class="bi bi-activity"></i>
+              <h4><a href="" class="stretched-link">Lorem Ipsum</a></h4>
+              <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
             </div>
-            <p class="py-3">
-              Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis.
-              Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
-            </p>
-            <p class="m-0">
-              Recusandae est praesentium consequatur eos voluptatem. Vitae dolores aliquam itaque odio nihil. Neque ut neque ut quae voluptas. Maxime corporis aut ut ipsum consequatur. Repudiandae sunt sequi minus qui et. Doloribus molestiae officiis.
-              Soluta eligendi fugiat omnis enim. Numquam alias sint possimus eveniet ad. Ratione in earum eum magni totam.
-            </p>
-          </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-3 col-md-6 d-flex">
+            <div class="service-item position-relative">
+              <i class="bi bi-bounding-box-circles"></i>
+              <h4><a href="" class="stretched-link">Sed ut perspici</a></h4>
+              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-3 col-md-6 d-flex">
+            <div class="service-item position-relative">
+              <i class="bi bi-calendar4-week"></i>
+              <h4><a href="" class="stretched-link">Magni Dolores</a></h4>
+              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-3 col-md-6 d-flex">
+            <div class="service-item position-relative">
+              <i class="bi bi-broadcast"></i>
+              <h4><a href="" class="stretched-link">Nemo Enim</a></h4>
+              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+            </div>
+          </div><!-- End Service Item -->
+
         </div>
 
       </div>
-    </section><!-- End About Section -->
+    </section><!-- End Services Section -->
+
+    <!-- ======= Pricing Section ======= -->
+    <section id="pricing" class="pricing">
+      <div class="container">
+
+        <div class="section-header">
+          <h2>Prices</h2>
+          <p>Check my adorable pricing</p>
+        </div>
+
+        <div class="row gy-4 gx-lg-5">
+
+          <div class="col-lg-6">
+            <div class="pricing-item d-flex justify-content-between">
+              <h3>Portrait Photography</h3>
+              <h4>$160.00</h4>
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <div class="col-lg-6">
+            <div class="pricing-item d-flex justify-content-between">
+              <h3>Fashion Photography</h3>
+              <h4>$300.00</h4>
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <div class="col-lg-6">
+            <div class="pricing-item d-flex justify-content-between">
+              <h3>Sports Photography</h3>
+              <h4>$200.00</h4>
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <div class="col-lg-6">
+            <div class="pricing-item d-flex justify-content-between">
+              <h3>Still Life Photography</h3>
+              <h4>$120.00</h4>
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <div class="col-lg-6">
+            <div class="pricing-item d-flex justify-content-between">
+              <h3>Wedding Photography</h3>
+              <h4>$500.00</h4>
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <div class="col-lg-6">
+            <div class="pricing-item d-flex justify-content-between">
+              <h3>Photojournalism</h3>
+              <h4>$200.00</h4>
+            </div>
+          </div><!-- End Pricing Item -->
+
+        </div>
+    </section><!-- End Pricing Section -->
 
     <!-- ======= Testimonials Section ======= -->
     <section id="testimonials" class="testimonials">
@@ -170,7 +229,7 @@
                   Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
                 </p>
                 <div class="profile mt-auto">
-                  <img src="resources/images/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                  <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
                   <h3>Saul Goodman</h3>
                   <h4>Ceo &amp; Founder</h4>
                 </div>
@@ -186,7 +245,7 @@
                   Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
                 </p>
                 <div class="profile mt-auto">
-                  <img src="resources/images/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                  <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
                   <h3>Sara Wilsson</h3>
                   <h4>Designer</h4>
                 </div>
@@ -202,7 +261,7 @@
                   Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
                 </p>
                 <div class="profile mt-auto">
-                  <img src="resources/images/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                  <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
                   <h3>Jena Karlis</h3>
                   <h4>Store Owner</h4>
                 </div>
@@ -218,7 +277,7 @@
                   Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
                 </p>
                 <div class="profile mt-auto">
-                  <img src="resources/images/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                  <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
                   <h3>Matt Brandon</h3>
                   <h4>Freelancer</h4>
                 </div>
@@ -234,7 +293,7 @@
                   Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
                 </p>
                 <div class="profile mt-auto">
-                  <img src="resources/images/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                  <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
                   <h3>John Larson</h3>
                   <h4>Entrepreneur</h4>
                 </div>
@@ -273,13 +332,13 @@
     <div class="line"></div>
   </div>
 
-  <!-- Vendor JS Files -->
+  <!-- static JS Files -->
   <script src="resources/js/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="resources/js/swiper/swiper-bundle.min.js"></script>
   <script src="resources/js/glightbox/js/glightbox.min.js"></script>
   <script src="resources/js/aos/aos.js"></script>
   <script src="resources/js/php-email-form/validate.js"></script>
-
+  
   <!-- Template Main JS File -->
   <script src="resources/js/main.js"></script>
 
