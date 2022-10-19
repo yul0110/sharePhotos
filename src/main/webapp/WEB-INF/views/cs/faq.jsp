@@ -72,7 +72,12 @@
             </ul>
           </li>
           <li><a href="#">친구들</a></li>
-          <li><a href="#">고객센터</a></li>
+          <li class="dropdown"><a href="/javascript:void();"><span>고객센터</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+          	<ul>
+              <li><a href="/inquiry">1:1문의</a></li>
+              <li><a href="/faq">FAQ</a></li>
+            </ul>
+          </li>
         </ul>
       </nav><!-- .navbar -->
 
@@ -201,7 +206,7 @@
           <div class="col-lg-6 text-center">
             <h2>원하시는 답변이 없나요?</h2>
 			<br>
-            <a class="cta-btn" href="contact.html">1:1 문의</a>
+            <a class="cta-btn" href="/inquiry">1:1 문의</a>
 
           </div>
         </div>

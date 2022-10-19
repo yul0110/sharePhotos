@@ -72,7 +72,12 @@
             </ul>
           </li>
           <li><a href="#">친구들</a></li>
-          <li><a href="#">고객센터</a></li>
+          <li class="dropdown"><a href="/javascript:void();"><span>고객센터</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+          	<ul>
+              <li><a href="/inquiry">1:1문의</a></li>
+              <li><a href="/faq">FAQ</a></li>
+            </ul>
+          </li>
         </ul>
       </nav><!-- .navbar -->
 
@@ -107,13 +112,19 @@
           <div class="col-lg-9">
             <form action="forms/contact.php" method="post" role="form" class="php-email-form">
               <div class="form-group mt-3">
-                <input type="email" class="form-control" name="subject" id="subject" placeholder="연락받을 E-mail" required>
+              	<div>이메일</div>
+              	<br>
+                <input type="email" class="form-control" name="subject" id="subject" placeholder="asdasd@sharePhotos.com" required>
               </div>
               <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="문의제목" required>
+              	<div>문의제목</div>
+              	<br>
+                <input type="text" class="form-control" name="subject" id="subject" required>
               </div>
               <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="문의내용" required></textarea>
+              	<div>문의 내용</div>
+              	<br>
+                <textarea class="form-control" name="message" rows="5" required></textarea>
               </div>
               <div class="my-3">
                 <div class="loading">Loading</div>

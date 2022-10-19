@@ -72,7 +72,12 @@
             </ul>
           </li>
           <li><a href="#" class="active">친구들</a></li>
-          <li><a href="#">고객센터</a></li>
+          <li class="dropdown"><a href="/javascript:void();"><span>고객센터</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+          	<ul>
+              <li><a href="/inquiry">1:1문의</a></li>
+              <li><a href="/faq">FAQ</a></li>
+            </ul>
+          </li>
         </ul>
       </nav><!-- .navbar -->
 
