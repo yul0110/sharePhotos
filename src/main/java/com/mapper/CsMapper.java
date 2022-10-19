@@ -9,7 +9,10 @@ import com.vo.Faq;
 @Mapper
 public interface CsMapper {
 
-	//카테고리 조회
+	//카테고리 코드 조회
 	List<Faq> selectCategoryCodeList();
-	
+
+	//카테고리 조회
+	List<Faq> selectCategoryList(int categoryCode);
+
 }

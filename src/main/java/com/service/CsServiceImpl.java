@@ -20,4 +20,9 @@ public class CsServiceImpl implements CsService{
 	public List<Faq> selectCategoryCodeList() {	
 		return csMapper.selectCategoryCodeList();
 	}
+
+	@Override
+	public List<Faq> selectCategoryList(int categoryCode) {
+		return csMapper.selectCategoryList(categoryCode);
+	}
 }

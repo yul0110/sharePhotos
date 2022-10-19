@@ -127,7 +127,7 @@
 
           <c:forEach var="item" items="${faqCategoryList}">
 	          <div class="col-xl-3 col-md-6 d-flex">
-	            <div class="service-item position-relative faqClick" data-category="${item.categoryCode}">
+	            <div class="service-item position-relative faqClick${item.categoryCode == 1 ? ' firstClick' : ''}" data-category="${item.categoryCode}" data-cnn="${ item.categoryCode == 1 ? '사진' : item.categoryCode == 2 ? '앨범' : item.categoryCode == 3 ? '회원' : '결제'}">
 	              <i class="bi bi-activity"></i>
 	              <h4><a href="javascript:void(0);" class="stretched-link">
 	              	<c:if test="${item.categoryCode == 1}">
@@ -153,55 +153,26 @@
       </div>
     </section><!-- End Services Section -->
 
-    <!-- ======= Pricing Section ======= -->
+    
     <section id="pricing" class="pricing">
-      <div class="container">
+		<div class="container">
+	        <div class="section-header">
+	          <h2>FAQ</h2>
+	          <p id='categoryTitle'>사진</p>
+	        </div>
 
-        <div class="section-header">
-          <h2>faq</h2>
-          <p>(바뀌는 카테고리명)</p>
-        </div>
-
-        <div class="row gy-4 gx-lg-5">
-
-          <div class="col-lg-6">
-            <div class="pricing-item d-flex justify-content-between">
-              <h3>(질문)1(질문)1(질문)1(질문)1(질문)1(질문)1(질문)1(질문)1(질문)1(질문)1(질문)1(질문)1(질문)1(질문)1(질문)1(질문)1(질문)1(질문)1(질문)1(질문)1(질문)1(질문)1(질문)1(질문)1(질문)1(질문)1(질문)1</h3>
-            </div>
-            
-          </div><!-- End Pricing Item -->
-
-          <div class="col-lg-6">
-            <div class="pricing-item d-flex justify-content-between">
-              <h4>(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1(답변)1</h4>
-            </div>
-          </div><!-- End Pricing Item -->
-
-          <div class="col-lg-6">
-            <div class="pricing-item d-flex justify-content-between">
-              <h3>(질문)2</h3>
-            </div>
-          </div><!-- End Pricing Item -->
-
-          <div class="col-lg-6">
-            <div class="pricing-item d-flex justify-content-between">
-              <h4>(답변)2</h4>
-            </div>
-          </div><!-- End Pricing Item -->
-
-          <div class="col-lg-6">
-            <div class="pricing-item d-flex justify-content-between">
-              <h3>(질문)3</h3>
-            </div>
-          </div><!-- End Pricing Item -->
-
-          <div class="col-lg-6">
-            <div class="pricing-item d-flex justify-content-between">
-              <h4>(답변)3</h4>
-            </div>
-          </div><!-- End Pricing Item -->
-
-        </div>
+	        <div id='categoryContainer' class="row gy-4 gx-lg-5">
+				
+				<!-- ajax data zone -->
+				<!-- ajax data zone -->
+				<!-- ajax data zone -->
+				<!-- ajax data zone -->
+				<!-- ajax data zone -->
+				<!-- ajax data zone -->
+				<!-- ajax data zone -->
+				
+			</div>
+		</div>
     </section><!-- End Pricing Section -->
 
     <!-- ======= Testimonials Section ======= -->
@@ -252,6 +223,38 @@
   <!-- Template Main JS File -->
   <script src="resources/js/main.js"></script>
 
+
+
+
+	<!-- ajax 템플릿 -->
+	<!-- ajax 템플릿 -->
+	<!-- ajax 템플릿 -->
+    <section id="pricing" class="pricing" style="display:none;">
+		<div class="container">
+	        <div class="section-header">
+	          <h2>FAQ</h2>
+	          <p>사진</p>
+	        </div>
+
+	        <div id='templ' class="row gy-4 gx-lg-5">
+				<div id='qus' class="col-lg-6">
+		            <div class="pricing-item d-flex justify-content-between">
+		              <h3>templ 데이터</h3>
+					</div>
+					</div>
+				<div id='awr' class="col-lg-6">
+					<div class="pricing-item d-flex justify-content-between">
+						<h4>templ 데이터</h4>
+					</div>
+				</div><!-- End Pricing Item -->
+			</div>
+		</div>
+    </section><!-- End Pricing Section -->
+    
+	<!-- ajax 템플릿 -->
+	<!-- ajax 템플릿 -->
+	<!-- ajax 템플릿 -->
+	
 </body>
 
 </html>

@@ -16,6 +16,7 @@
 	 // prototype 프로토 타입
 	 yul.page.prototype.init = function() {
 	 	this.clickEvent() // bind form submit event
+	 	$('.firstClick').click();
 	 }
 	 
 	 /**
@@ -26,12 +27,33 @@
 		//회원가입 시도 클릭 이벤트
 	 	$('.faqClick').on('click', function(e) {
 	 		e.preventDefault();
-	 		
 	 		//카테고리 코드값
-	 		var a = $(this).data('category');
+	 		var categoryCode = $(this).data('category'); //카테고리 코드
+			var ccn = $(this).data('cnn'); //카테고리 이름
 	 		
-	 		console.log(a);
+	 		//카테고리명 변경
+	 		$('#categoryTitle').html(ccn);
 	 		
+	 		yul.common.baseAjax("/categoryAjax", categoryCode, 'post', function(d){
+																		
+
+																		var categoryHeaderClone;
+																		
+																		//컨테이너 안에 있는 데이터를 지운다
+																		$('#categoryContainer').html('');
+																		
+																		$.each (d.categoryList, function (index, item) {
+																			//템플릿에 있는 질문타이틀을 복사하여 데이터를 넣어서 append 해줌
+																			var qusClone = $('#templ').find('#qus').clone();
+																			qusClone.find('h3').html(item.tit);
+																			$('#categoryContainer').append(qusClone);
+																			//템플릿에 있는 질문타이틀을 복사하여 데이터를 넣어서 append 해줌
+																			var awrClone = $('#templ').find('#awr').clone();
+																			awrClone.find('h4').html(item.context);
+																			$('#categoryContainer').append(awrClone);		
+																		});
+																		
+																	});
 		 });
 		
 	 };
