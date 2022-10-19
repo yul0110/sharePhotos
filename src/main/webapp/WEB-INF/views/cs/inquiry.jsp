@@ -71,7 +71,7 @@
               </li>
             </ul>
           </li>
-          <li><a href="#">친구들</a></li>
+          <li><a href="/shareFriends">친구들</a></li>
           <li class="dropdown"><a href="/javascript:void();"><span>고객센터</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
           	<ul>
               <li><a href="/inquiry">1:1문의</a></li>
