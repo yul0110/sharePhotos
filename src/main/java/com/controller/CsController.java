@@ -13,7 +13,7 @@ import com.service.TestService;
 public class CsController {
 	
 	@RequestMapping(value = "/faq", method = RequestMethod.GET)
-    public String mainPage() {
+    public String faqPage() {
 		
         return "cs/faq";
     }
