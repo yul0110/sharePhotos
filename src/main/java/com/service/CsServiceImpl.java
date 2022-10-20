@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.dao.InquryDao;
 import com.mapper.CsMapper;
 import com.mapper.TestMapper;
 import com.vo.Faq;
@@ -25,4 +26,11 @@ public class CsServiceImpl implements CsService{
 	public List<Faq> selectCategoryList(int categoryCode) {
 		return csMapper.selectCategoryList(categoryCode);
 	}
+
+	@Override
+	public int insertInqury(InquryDao inquryDao) {
+		return csMapper.insertInqury(inquryDao);
+	}
+
 }
+                      

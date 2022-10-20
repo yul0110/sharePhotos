@@ -67,7 +67,7 @@ public class LoginController {
 	   ModelAndView mv = new ModelAndView("jsonView");
 	   int result = loginService.selectIdCheck(memberDao);
 	   mv.addObject("result",result);
-	   mv.addObject(memberDao.getUserId()+"사용 가능한 아이디 입니다.");
+	   mv.addObject("msg", memberDao.getUserId()+"사용 가능한 아이디 입니다.");
 	   return mv;
 	}
 }	   

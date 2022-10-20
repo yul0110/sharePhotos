@@ -3,15 +3,31 @@
 
 <mapper namespace="com.mapper.CsMapper">
 
-
-	<!-- 테스트 조회 -->
+	<!-- 조회 -->
 	<select id="selectCategoryCodeList" resultType="com.vo.Faq" >
 		SELECT DISTINCT categoryCode FROM faq 
 	</select>
 	
-	<!--  -->
+	<!---->
 	<select id="selectCategoryList" resultType="com.vo.Faq" parameterType="int" >
 		SELECT * FROM faq WHERE categoryCode = #{value}
 	</select>
+
+	<!--// 조회 -->
+
+	<!-- 인설트 -->
+	<insert id="insertInqury" parameterType="com.dao.InquryDao" >
+		INSERT INTO inqury 
+		(id, email, tit, context, regDt, regId, updateDt, updateId, useYn)
+		VALUES
+		(#{id}, #{email}, #{tit}, #{context}, now(), #{regId}, now(), #{updateId}, "Y")
+	</insert>
+	
+	<!--// 인설트 -->
+	
+	<!-- 수정처리 -->
+	
+	
+	<!--// 수정처리 -->
 	
 </mapper>
