@@ -23,9 +23,9 @@
 	<!-- 인설트 -->
 	<insert id="insertInqury" parameterType="com.dao.InquryDao" >
 		INSERT INTO inqury 
-		(id, email, tit, context, regDt, regId, updateDt, updateId, useYn)
+		(id, email, tit, context, mid, regDt, regId, updateDt, updateId, useYn)
 		VALUES
-		(#{id}, #{email}, #{tit}, #{context}, now(), #{regId}, now(), #{updateId}, "Y")
+		(#{id}, #{email}, #{tit}, #{context}, #{mid}, now(), #{regId}, now(), #{updateId}, "Y")
 	</insert>
 	
 	<!--// 인설트 -->

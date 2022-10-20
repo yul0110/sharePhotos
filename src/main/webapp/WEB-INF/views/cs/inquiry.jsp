@@ -1,33 +1,46 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+
 <!DOCTYPE html>
 <html lang="en">
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	
+	<title>[Template] Sample Inner Page</title>
+	<meta content="" name="description">
+	<meta content="" name="keywords">
+	
+	<!-- Favicons -->
+	<link href="resources/images/favicon.png" rel="icon">
+	<link href="resources/images/apple-touch-icon.png" rel="apple-touch-icon">
 
-  <title>[Template] Sample Inner Page</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+	
+	<!-- js Files -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="http://code.jquery.com/ui/1.11.0/jquery-ui.js"></script> 
+	<script src="resources/js/common/base.js"></script>
+	<script src="resources/js/common/common.js"></script>
+	<script src="resources/js/common/layerPopup.js"></script>
+	<script src="resources/js/cs/inquiry.js"></script>
+	
+	<!-- CSS Files -->
+	<link href="resources/css/layerPopup.css" rel="stylesheet">
+	
+	<!-- Vendor CSS Files -->
+	<link href="resources/css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="resources/css/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+	<link href="resources/css/swiper/swiper-bundle.min.css" rel="stylesheet">
+	<link href="resources/css/glightbox/css/glightbox.min.css" rel="stylesheet">
+	<link href="resources/css/aos/aos.css" rel="stylesheet">
 
-  <!-- Favicons -->
-  <link href="resources/images/favicon.png" rel="icon">
-  <link href="resources/images/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="resources/css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="resources/css/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="resources/css/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="resources/css/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="resources/css/aos/aos.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="resources/css/main.css" rel="stylesheet">
+	 <!-- Template Main CSS File -->
+	 <link href="resources/css/main.css" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: PhotoFolio - v1.0.0
@@ -114,17 +127,17 @@
               <div class="form-group mt-3">
               	<div>이메일</div>
               	<br>
-                <input type="email" class="form-control" name="subject" id="subject" placeholder="abcd@sharePhotos.com" required>
+                <input type="email" class="form-control" name="" id="inqEmail" placeholder="abcd@sharePhotos.com" required>
               </div>
               <div class="form-group mt-3">
               	<div>문의제목</div>
               	<br>
-                <input type="text" class="form-control" name="subject" id="subject" required>
+                <input type="text" class="form-control" name="subject" id="inqTit" required>
               </div>
               <div class="form-group mt-3">
               	<div>문의 내용</div>
               	<br>
-                <textarea class="form-control" name="message" rows="5" required></textarea>
+                <textarea class="form-control" id='inqContext' name="message" rows="5" required></textarea>
               </div>
               <div class="my-3">
                 <div class="loading">Loading</div>
@@ -132,7 +145,7 @@
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
               <br>
-              <div class="text-center"><button type="submit">문의하기</button></div>
+              <div class="text-center"><button id='inquiry' type="button">문의하기</button></div>
               <br>
               <br>
             </form>

@@ -46,11 +46,19 @@ public class CsController {
 	   mv.addObject("categoryList", categoryList);
 	   return mv;
 	}
+
+	//inquiry
+	@RequestMapping(value = "/inquiry", method = RequestMethod.GET)
+	public ModelAndView inquiryPage() {
+		ModelAndView mv = new ModelAndView();
+		
+		mv.setViewName("cs/inquiry");
+		return mv;
+	}
 	
 	//inquiry
-	@RequestMapping(value = "/inquiryAjax", method = RequestMethod.GET)
+	@RequestMapping(value = "/inquiryAjax", method = RequestMethod.POST)
 	public ModelAndView inquiryAjax(@RequestBody InquryDao inquryDao) {
-		
 		ModelAndView mv = new ModelAndView("jsonView");
 		
 		
@@ -63,7 +71,6 @@ public class CsController {
 		
 		mv.addObject("result", result);
 		mv.addObject("msg",  "문의가 등록 되었습니다.");
-		
 		return mv;
 	}
 	
