@@ -14,12 +14,4 @@
 		SELECT * FROM faq WHERE categoryCode = #{value}
 	</select>
 	
-	
-	
-	
-	
-	<!-- 모든 멤버리스트 조회 -->
-	<select id="selectMemberList" resultType="com.vo.Member">
-		select id, categoryCode, userId, addr1, addr2, pno, regDt, regId, updateDt, updateId from member
-	</select>	
 </mapper>

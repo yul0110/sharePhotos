@@ -46,10 +46,12 @@
 																			//템플릿에 있는 질문타이틀을 복사하여 데이터를 넣어서 append 해줌
 																			var qusClone = $('#templ').find('#qus').clone();
 																			qusClone.find('h3').html(item.tit);
+																			qusClone.attr('id', 'qus'+ index);
 																			$('#categoryContainer').append(qusClone);
 																			//템플릿에 있는 질문타이틀을 복사하여 데이터를 넣어서 append 해줌
 																			var awrClone = $('#templ').find('#awr').clone();
 																			awrClone.find('h4').html(item.context);
+																			awrClone.attr('id', 'awr'+ index);
 																			$('#categoryContainer').append(awrClone);		
 																		});
 																		
