@@ -16,7 +16,6 @@
 	<!-- 테이블에 다음 시퀀스 추출 -->
 	<select id="selectTableNumbering" resultType="int">
 		SELECT id FROM member ORDER BY id DESC LIMIT 1
-		
 	</select>
 	
 	<!-- 아이디 중복 체크 -->

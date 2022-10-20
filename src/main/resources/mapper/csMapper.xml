@@ -4,6 +4,11 @@
 <mapper namespace="com.mapper.CsMapper">
 
 	<!-- 조회 -->
+	<!-- 테이블에 다음 시퀀스 추출 -->
+	<select id="selectTableNumbering" resultType="int">
+		SELECT id FROM inqury ORDER BY id DESC LIMIT 1
+	</select>
+	
 	<select id="selectCategoryCodeList" resultType="com.vo.Faq" >
 		SELECT DISTINCT categoryCode FROM faq 
 	</select>
