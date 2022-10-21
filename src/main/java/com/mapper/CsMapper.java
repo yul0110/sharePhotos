@@ -4,7 +4,7 @@ import java.util.List;
 
 import org.apache.ibatis.annotations.Mapper;
 
-import com.dao.InquryDao;
+import com.dao.InquiryDao;
 import com.vo.Faq;
 
 @Mapper
@@ -20,5 +20,5 @@ public interface CsMapper {
 	//카테고리 조회
 	List<Faq> selectCategoryList(int categoryCode);
 
-	int insertInqury(InquryDao inquryDao);
+	int insertInquiry(InquiryDao inquiryDao);
 }

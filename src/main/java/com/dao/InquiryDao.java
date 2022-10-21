@@ -5,7 +5,7 @@ import java.util.Date;
 import lombok.Data;
 
 @Data
-public class InquryDao {
+public class InquiryDao {
 	
 	
 	//1:1문의 id

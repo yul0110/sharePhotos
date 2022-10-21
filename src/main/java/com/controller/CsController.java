@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.dao.InquryDao;
+import com.dao.InquiryDao;
 import com.dao.MemberDao;
 import com.service.CsService;
 import com.vo.Faq;
@@ -58,16 +58,16 @@ public class CsController {
 	
 	//inquiry
 	@RequestMapping(value = "/inquiryAjax", method = RequestMethod.POST)
-	public ModelAndView inquiryAjax(@RequestBody InquryDao inquryDao) {
+	public ModelAndView inquiryAjax(@RequestBody InquiryDao inquiryDao) {
 		ModelAndView mv = new ModelAndView("jsonView");
 		
 		
 		//율데이터 - 더미데이터
-		inquryDao.setMid(999999);
-		inquryDao.setRegId(99999);
-		inquryDao.setUpdateId(999999);
+		inquiryDao.setMid(999999);
+		inquiryDao.setRegId(99999);
+		inquiryDao.setUpdateId(999999);
 		
-		int result = csService.insertInqury(inquryDao);
+		int result = csService.insertInquiry(inquiryDao);
 		
 		mv.addObject("result", result);
 		mv.addObject("msg",  "문의가 등록 되었습니다.");

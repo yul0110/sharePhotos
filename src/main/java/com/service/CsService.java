@@ -3,7 +3,7 @@ package com.service;
 
 import java.util.List;
 
-import com.dao.InquryDao;
+import com.dao.InquiryDao;
 import com.vo.Faq;
 
 public interface CsService {
@@ -15,7 +15,7 @@ public interface CsService {
 	List<Faq> selectCategoryList(int categoryCode);
 	
 	//1:1문의 등록
-	int insertInqury(InquryDao inquryDao);
+	int insertInquiry(InquiryDao inquiryDao);
 	
 	
 }

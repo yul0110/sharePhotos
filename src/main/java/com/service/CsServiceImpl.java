@@ -5,7 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.dao.InquryDao;
+import com.dao.InquiryDao;
 import com.mapper.CsMapper;
 import com.mapper.TestMapper;
 import com.vo.Faq;
@@ -28,14 +28,14 @@ public class CsServiceImpl implements CsService{
 	}
 
 	@Override
-	public int insertInqury(InquryDao inquryDao) {
+	public int insertInquiry(InquiryDao inquiryDao) {
 		
 		//문의 테이블 넘버링 처리
 		int sqs = csMapper.selectTableNumbering();
 		sqs = sqs + 1;
-		inquryDao.setId(sqs);
+		inquiryDao.setId(sqs);
 		
-		return csMapper.insertInqury(inquryDao);
+		return csMapper.insertInquiry(inquiryDao);
 	}
 
 }

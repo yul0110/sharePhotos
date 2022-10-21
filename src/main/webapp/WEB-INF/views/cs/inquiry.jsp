@@ -123,19 +123,19 @@
         <div class="row justify-content-center mt-4">
 
           <div class="col-lg-9">
-            <form action="/" method="post" role="form" class="php-email-form">
+            <form action="/inquiry" method="post" role="form" class="php-email-form">
               <div class="form-group mt-3">
-              	<div>이메일</div>
+              	<div id="inqEmailError" style="font-size:15px;">이메일 <strong class="errorMsg" style="color:red;"></strong></div>
               	<br>
                 <input type="email" class="form-control" name="" id="inqEmail" placeholder="abcd@sharePhotos.com" required>
               </div>
               <div class="form-group mt-3">
-              	<div>문의제목</div>
+              	<div id="inqTitError" style="font-size:15px;">문의제목 <strong class="errorMsg" style="color:red;"></strong></div>
               	<br>
                 <input type="text" class="form-control" name="subject" id="inqTit" required>
               </div>
               <div class="form-group mt-3">
-              	<div>문의 내용</div>
+              	<div id="inqContextError" style="font-size:15px;">문의 내용 <strong class="errorMsg" style="color:red;"></strong></div>
               	<br>
                 <textarea class="form-control" id='inqContext' name="message" rows="5" required></textarea>
               </div>

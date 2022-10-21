@@ -23,19 +23,27 @@
 	 */
 	 yul.page.prototype.clickEvent = function() {
 		
-		//회원가입 시도 클릭 이벤트
+		//1:1 문의 시도 클릭 이벤트
 	 	$('#inquiry').on('click', function(e) {
 	 		e.preventDefault();
 	 		
-	 		var getEmail 		= $('#inqEmail').val();
-	 		var getTit	 		= $('#inqTit').val();
-	 		var getContext	 	= $('#inqContext').val();
-	 		
-	 		
+	 		let formMailTaeget = $('#inqEmail');
+	 		let formTitTaeget = $('#inqTit');
+	 		let formContextTaeget = $('#inqContext');
+	 
+	 		//validation 검증
+			yul.common.valid("kor", formMailTaeget , "한글이 불가합니다.");
+			yul.common.valid("lenMax",formMailTaeget , "최대 50자 이내로 입력해주세요.", 51);
+			yul.common.valid("lenMin", formTitTaeget , "문의 제목은 필수입니다.", 1);
+			yul.common.valid("lenMax", formTitTaeget , "최대 30자 이내로 입력해주세요.", 31);
+			yul.common.valid("lenMin", formContextTaeget , "문의 내용은 필수입니다.", 1);
+			yul.common.valid("lenMax", formContextTaeget , "최대 1000자 이내로 입력해주세요.", 1001);
+	
+	
 	 		var parameterData = {
-						email 		: getEmail,
-						tit			: getTit,
-						context 	: getContext  
+						email 		: formMailTaeget.val(),
+						tit			: formTitTaeget.val(),
+						context 	: formContextTaeget.val()
 							} 
 	 		
 	 		yul.common.baseAjax("/inquiryAjax", parameterData, 'post', function(d){
