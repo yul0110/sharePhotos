@@ -24,7 +24,7 @@ public class MemberDao {
 	private String addr1;
 	
 	//주소 나머지
-	private String addr2;
+	private String addr2; 
 	
 	//우편번호
 	private String zonecode;

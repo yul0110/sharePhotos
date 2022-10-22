@@ -30,7 +30,7 @@
 		SET pno = #{pno}
 		WHERE id = #{id}
 	</update>
-	
+	                
 	<update id="updateMemeberAddr" parameterType="com.dao.MemberDao">
 		UPDATE member
 		SET addr1 = #{addr1}, addr2 = #{addr2}
