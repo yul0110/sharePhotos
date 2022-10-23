@@ -54,27 +54,7 @@ public class MyPageController {
 		return mv;
 	}	
 	
-	
-	
-	
-	
-	
-//	//회원 정보수정 Ajax 
-//	@RequestMapping(value = "/memberUpdateAjax", method = RequestMethod.POST)
-//	public ModelAndView memberUpdateAjax(@RequestBody MemberDao memberDao) {
-//		 
-//		ModelAndView mv = new ModelAndView("jsonView");
-//		 
-//		int resultAddr = myPageService.updateMemeberAddr(memberDao);
-//		int resultPno = myPageService.updateMemeberPno(memberDao);
-//		
-//		mv.addObject("result", resultAddr);
-//		mv.addObject("result", resultPno);
-//		mv.addObject("msg",memberDao.getPno());
-//		mv.addObject("msg",memberDao.getAddr1());
-//		
-//		return mv;
-//	}	
+	 
 
 	//회원 탈퇴 페이지
 	@RequestMapping(value = "/memberResign", method = RequestMethod.GET)
