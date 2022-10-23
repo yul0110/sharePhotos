@@ -5,7 +5,7 @@ import org.springframework.stereotype.Service;
 
 import com.mapper.AlbumBoardMapper;
 import com.mapper.AlbumMapper;
-import com.mapper.TestMapper;
+import com.mapper.SampleMapper;
 
 @Service
 public class AlbumBoardServiceImpl implements AlbumBoardService{

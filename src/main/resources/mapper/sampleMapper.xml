@@ -15,11 +15,11 @@
 	1. 테이블에 넣는 과정이고 보통 모델형태로 받아오는경우가 많음
 	2. 테이블 구조를 보고 not null인 컬럼(레코드)와 아닌 컬럼(레코드)를 체크하여 내가 넣을 데이터를 확인하고 자료형이 매치 되는지 확인
 	3. 프라이머리키는 고유의 값이며 mysql과 mariadb에는 자동배정이 있지만 사용하지 않음 (간혹 문제가 생김)
-	id 				= **mapper.java -- 인터페이스 메소드와 매칭
+	id 				= **mapper.java 인터페이스 메소드와 매칭
 	parameterType 	= 넣는값 / 데이터를 가져와서 DB에 조회하거나 넣어주기 위해 담아오는 변수나 모델
 	resultType 		= 결과값 / 데이터를 조회하여 담아서 가져오는 변수나 모델 
 	 -->
-	<insert id="insertSampleTable" parameterType="com.dao.SampleDao"> 
+	<insert id="insertSampleTable" parameterType="com.dao.MemberDao"> 
         INSERT INTO member <!-- (테이블명) --> 
         (id, nm, userId, pw, addr1, addr2, pno, regDt, regId, updateDt, updateId, useYn) <!-- ( 해당 테이블 레코드) --> 
         VALUES <!-- (질의문중 1가지 방법) --> 
@@ -42,29 +42,38 @@
 	EX) 
 	EX)
 	 -->
-	<select id="selectTableNumbering" resultType="int">
+	<select id="selectTableNumberingSample" resultType="int">
 		SELECT id FROM member ORDER BY id DESC LIMIT 1
+	</select>
+	<!-- 파라미터가 단수인 경우 -->
+	<select id="selectMemberSample" parameterType="int" resultType="com.vo.Member">
+		SELECT * FROM member WHERE id = #{value}
+	</select>
+	<!-- 파라미터가 복수인 경우 -->
+	<select id="selectMemberListSample" parameterType="com.dao.MemberDao" resultType="com.vo.Member">
+		SELECT * FROM member WHERE id = #{id} AND nm = #{nm}
 	</select>
 	
 	<!-- U update 수정 -->
-	<!-- where의 조건문으로 어던데이터를 바꿀껀지 특정해줘야함
-	<!--
-		UPDATE (테이블명)
-		SET (레코드명_어디부분) = (가져온 파라미터 변수)
-		WHERE (레코드/컬럼) = (가져온 파라미터 변수인데 특정값)
-	1.	수정할 부분을 체크해준다 
-	2. WHERE 조건을 확실하게 해준다. 잘못하면 전체 데이터가 변경되는 대참사가 벌어진다.
-	 -->
-	<update id="updateMemeberPno" parameterType="com.dao.MemberDao">
+	<!-- where의 조건문으로 어던데이터를 바꿀껀지 특정해줘야함  -->
+	<!--	UPDATE (테이블명) -->
+	<!--	SET (레코드명_어디부분) = (가져온 파라미터 변수) -->
+	<!--	WHERE (레코드/컬럼) = (가져온 파라미터 변수인데 특정값) -->
+	<!--1.	수정할 부분을 체크해준다  -->
+	<!--2. WHERE 조건을 확실하게 해준다. 잘못하면 전체 데이터가 변경되는 대참사가 벌어진다. -->
+	 <!-- U update 한개수정 -->
+	<update id="updateMember" parameterType="com.dao.MemberDao">
 		UPDATE member
 		SET pno = #{pno}
-		WHERE id = #{id}
+		WHERE id = #{id} <!-- 조건문을 무조건 작성해야함 중요함 ☆☆☆☆☆ -->
 	</update>
-	                
-	<update id="updateMemeberAddr" parameterType="com.dao.MemberDao">
+	 
+	 <!-- U update 한개이상 수정 -->               
+	<update id="updateMemberAddr" parameterType="com.dao.MemberDao">
 		UPDATE member
-		SET addr1 = #{addr1}, addr2 = #{addr2}
-		WHERE id = #{id}
+		SET addr1 = #{addr1},
+		 	addr2 = #{addr2}
+		WHERE id = #{id} <!-- 조건문을 무조건 작성해야함 중요함 ☆☆☆☆☆ --> 
 	</update>
 	
 </mapper>

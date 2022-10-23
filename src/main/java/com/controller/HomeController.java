@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.service.AlbumService;
 import com.service.LoginService;
-import com.service.TestService;
+import com.service.SampleService;
 
 @Controller
 public class HomeController {

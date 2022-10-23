@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.mapper.AlbumMapper;
-import com.mapper.TestMapper;
+import com.mapper.SampleMapper;
 
 @Service
 public class AlbumServiceImpl implements AlbumService{

@@ -16,7 +16,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.dao.MemberDao;
 import com.service.LoginService;
-import com.service.TestService;
+import com.service.SampleService;
 import com.vo.Member;
 
 @Controller
@@ -26,7 +26,7 @@ public class LoginController {
 	LoginService loginService;
 	
 	@Autowired
-	TestService testService;
+	SampleService testService;
 	
 	
 	//로그인 페이지

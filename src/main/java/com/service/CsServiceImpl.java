@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 
 import com.dao.InquiryDao;
 import com.mapper.CsMapper;
-import com.mapper.TestMapper;
+import com.mapper.SampleMapper;
 import com.vo.Faq;
 import com.vo.Member;
 
