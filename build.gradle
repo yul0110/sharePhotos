@@ -33,6 +33,9 @@ dependencies {
 	// log4jdbc	
 	implementation 'org.bgee.log4jdbc-log4j2:log4jdbc-log4j2-jdbc4.1:1.16'
     implementation 'com.googlecode.json-simple:json-simple:1.1.1'
+    // 로그인 구현을 위한 시큐리티 추가
+    implementation 'org.springframework.boot:spring-boot-starter-security'
+	implementation 'org.thymeleaf.extras:thymeleaf-extras-springsecurity5'
     // json 데이터 처리
     // https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core
     // https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind
