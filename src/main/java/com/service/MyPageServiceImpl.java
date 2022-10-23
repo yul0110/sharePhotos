@@ -16,6 +16,11 @@ public class MyPageServiceImpl implements MyPageService{
 	private MyPageMapper myPageMapper;
 
 	@Override
+	public List<Member> selectMymemberData(int id) {
+		return myPageMapper.selectMymemberData(id);
+	}
+
+	@Override
 	public int updateMemeberPno(MemberDao memberDao) {
 		return myPageMapper.updateMemeberPno(memberDao);
 	}
@@ -25,10 +30,6 @@ public class MyPageServiceImpl implements MyPageService{
 		return myPageMapper.updateMemeberAddr(memberDao);
 	}
 
-	@Override
-	public List<Member> selectMymemberData(int id) {
-		return myPageMapper.selectMymemberData(id);
-	}
 
 
 }
