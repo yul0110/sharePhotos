@@ -9,7 +9,7 @@ public interface MyPageService {
 
 	List<Member> selectMymemberData(int id);
 
-	int updateMemeberPno(MemberDao memberDao);
+	int updateMemeberPw(MemberDao memberDao);
 	
 	int updateMemeberAddr(MemberDao memberDao);
 }

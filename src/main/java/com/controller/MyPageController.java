@@ -27,6 +27,7 @@ public class MyPageController {
 		return "myPage/myPage";
 	}	
 	
+	
 	//회원정보 수정 페이지
 	@RequestMapping(value = "/memberUpdate", method = RequestMethod.GET)
 	public ModelAndView memberUpdatePage() {
@@ -45,17 +46,39 @@ public class MyPageController {
 		return mv;
 	}	
 	
-	//회원정보 수정 페이지
+	
+	//회원정보 수정 Ajax
 	@RequestMapping(value = "/memberUpdateAjax", method = RequestMethod.POST)
-	public ModelAndView memberUpdateAjax(@RequestBody MemberDao memberDao) {
-		 ModelAndView mv = new ModelAndView("jsonView");
+	public ModelAndView updateAjax(@RequestBody MemberDao memberDao) {
+		ModelAndView mv = new ModelAndView("jsonView");
+	
+		//더미 데이터_pig
+		memberDao.setId(1);
+		
+		int result = myPageService.updateMemeberAddr(memberDao);
 		 
-		 
+		mv.addObject("result",result);	 
 		return mv;
 	}	
 	
-	 
-
+	//회원정보 비밀번호 수정 Ajax
+	@RequestMapping(value = "/memberPwUpdateAjax", method = RequestMethod.POST)
+	public ModelAndView updatePwAjax(@RequestBody MemberDao memberDao) {
+		 ModelAndView mv = new ModelAndView("jsonView");
+		 
+		//더미 데이터_pig
+		memberDao.setId(1);
+		 
+		 int  result = myPageService.updateMemeberPw(memberDao);
+		 
+		 mv.addObject("result",result);
+		 
+		 return mv;
+	}
+	
+	
+	
+	
 	//회원 탈퇴 페이지
 	@RequestMapping(value = "/memberResign", method = RequestMethod.GET)
 	public String memberResignPage() {

@@ -6,39 +6,49 @@
 
 
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>[Template] Sample Inner Page</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+    <title>[Template] Sample Inner Page</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
 
-  <!-- Favicons -->
-  <link href="resources/images/favicon.png" rel="icon">
-  <link href="resources/images/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Favicons -->
+    <link href="resources/images/favicon.png" rel="icon">
+    <link href="resources/images/apple-touch-icon.png" rel="apple-touch-icon">
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
-  <link href="resources/css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="resources/css/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="resources/css/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="resources/css/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="resources/css/aos/aos.css" rel="stylesheet">
+	<!-- js Files -->
+	
+	<!-- 제이쿼리를 사용할수있게 링크를준 js -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+	<script src="resources/js/common/base.js"></script>
+	<script src="resources/js/common/common.js"></script>
+	<script src="resources/js/mypage/memberUpdate.js"></script>
+	
+	
+    <!-- Vendor CSS Files -->
+    <link href="resources/css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="resources/css/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="resources/css/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="resources/css/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="resources/css/aos/aos.css" rel="stylesheet">
 
-  <!-- Template Main CSS File -->
-  <link href="resources/css/main.css" rel="stylesheet">
+    <!-- Template Main CSS File -->
+    <link href="resources/css/main.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: PhotoFolio - v1.0.0
-  * Template URL: https://bootstrapmade.com/photofolio-bootstrap-photography-website-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
-</head>
+    <!-- =======================================================
+    * Template Name: PhotoFolio - v1.0.0
+    * Template URL: https://bootstrapmade.com/photofolio-bootstrap-photography-website-template/
+    * Author: BootstrapMade.com
+    * License: https://bootstrapmade.com/license/
+    ======================================================== -->
+  </head>
 
 <body>
 
@@ -112,7 +122,7 @@
       <div class="container">
         <div class="row justify-content-center mt-4">
           <div class="col-lg-9">
-            <form action="/joinusAjax" id='joinForm' name='joinForm' method="post" class="php-email-form">
+            <form action="/updateAjax" id='updateForm' name='updateForm' method="post" class="php-email-form">
               <div class="row"></div>
                 <div class="col-md-6 form-group" style="margin:auto;">
                   <h5 id="userIdError" style="font-size:15px;">아이디 <strong class="errorMsg" style="color:red;"></strong></h5>
@@ -122,6 +132,10 @@
                   <input type="password" name="pw" class="form-control" id="pw" placeholder="8~30자 영문,숫자,특수문자" maxlength='30' required>
                   <br>
                   <input type="password" name="pwc" class="form-control" id="pwc" placeholder="8~30자 영문,숫자,특수문자" maxlength='30' required>
+                  <br>
+                  <br>
+                  <button type="button" id="updatePwAjax">비밀번호 수정하기</button>
+                  <br>
                   <br>
                   <h5 id="nmError"style="font-size:15px;">이름 <strong class="errorMsg" style="color:red;"></strong></h5>
                   <input type="text" name="nm" class="form-control" id="nm" maxlength='20' value="${memberData.nm}"  required readonly>
@@ -142,7 +156,7 @@
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
-              <div class="text-center"><button id="joinusAjax" type="button">수정</button></div>
+              <div class="text-center"><button id="updateAjax" type="button">수정 등록</button></div>
               <br>
               <br>
             </form><!-- End Contact Form -->

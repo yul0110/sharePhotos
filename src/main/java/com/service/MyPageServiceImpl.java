@@ -21,8 +21,8 @@ public class MyPageServiceImpl implements MyPageService{
 	}
 
 	@Override
-	public int updateMemeberPno(MemberDao memberDao) {
-		return myPageMapper.updateMemeberPno(memberDao);
+	public int  updateMemeberPw(MemberDao memberDao) {
+		return myPageMapper.updateMemeberPw(memberDao);
 	}
 
 	@Override

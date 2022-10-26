@@ -10,9 +10,9 @@
 	</select>
 	
 	<!-- Update -->
-	<update id="updateMemeberPno" parameterType="com.dao.MemberDao">
+	<update id="updateMemeberPw" parameterType="com.dao.MemberDao">
 		UPDATE member
-		SET pno = #{pno}
+		SET pw = #{pw}
 		WHERE id = #{id}
 	</update>
 	

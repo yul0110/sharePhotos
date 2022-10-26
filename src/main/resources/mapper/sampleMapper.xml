@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 
-<mapper namespace="com.mapper.sampleMapper">
+<mapper namespace="com.mapper.SampleMapper">
 
 
 	<!-- 마이바티스는 #{변수명}을 이용하여 변수를 넣어줌-->
