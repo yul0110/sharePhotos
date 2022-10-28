@@ -33,9 +33,31 @@ public class LoginServiceImpl implements LoginService{
 		return loginMapper.updateMemeberAddr(memberDao);
 	}
 
-	@Override
+	@Override //회원가입 아이디 중복 체크
 	public int selectIdCheck(MemberDao memberDao) {
 		return loginMapper.selectIdCheck(memberDao);
 	}
+
+	@Override
+	public Integer selectLoginCheck(MemberDao memberDao) {
+		
+		int flagIdCheck 	= 0; //매치되지 않음
+		Integer flagGetId 		= 0; //매치되지 않음
+		
+		flagIdCheck = loginMapper.selectIdCheck(memberDao);
+		
+		if(flagIdCheck > 0) {
+			//아이디와 비밀번호를 체크
+			flagGetId = loginMapper.selectLoginCheck(memberDao);
+		}
+		
+		return flagGetId;
+	}
+
+	@Override
+	public int selectLoginIdCheck(MemberDao memberDao) {
+		return loginMapper.selectLoginIdCheck(memberDao);
+	}
+
 
 }

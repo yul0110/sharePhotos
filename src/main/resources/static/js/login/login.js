@@ -4,9 +4,7 @@
  */	  
 (function() {
 	
-	 yul.page = function() {
-		 this.form = document.forms.major;
-		 
+	 yul.page = function() {	 
 		 // js 파일이 로드되면 메소드를 실행시킴
 		 this.init();
 	 };
@@ -30,7 +28,45 @@
 	 		
 		});
 			
+		//로그인 시도 클릭 이벤트
+	 	$('#loginCheckAjax').on('click', function(e) {
+	 		e.preventDefault();
+	 		
+	 		let formUserTarget = $("#userId");
+	 		let formPwTarget = $("#userPw");
+	 		
+	 		
+	 		
+ 	 		var parameterData = {
+							userId : formUserTarget.val(),
+							pw : formPwTarget.val()}
+ 			
+	 		yul.common.baseAjax("/loginCheckAjax", parameterData, 'post', function(d){
+																		if(d.result == 1){
+																			alert('로그인 되었습니다.');
+																		}else{
+																			alert('로그인을 실패 했습니다.');
+																		}
+																		
+																		$('.col-lg-6').find('h2').html(d.msg);
+																	});
+		 });
+		 
 	 };
+
+
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
 	 
 	 $(function() {
 	 	yul.page = new yul.page();

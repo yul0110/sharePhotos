@@ -23,6 +23,17 @@
 		SELECT COUNT(userId) FROM `member` WHERE userId = #{userId}
 	</select>
 	
+	<!-- 로그인 아이디&비밀번호 체크 -->
+	<select id="selectLoginCheck" resultType="int" parameterType="com.dao.MemberDao">
+		SELECT id FROM `member` WHERE userId = #{userId} and pw = #{pw}
+	</select>
+	
+	<!-- 로그인 아이디 체크 -->
+	<select id="selectLoginIdCheck" resultType="int" parameterType="com.dao.MemberDao">
+		SELECT COUNT(userId) FROM `member` WHERE userId = #{userId}
+	</select>
+	
+	
 	
 	<!-- Update -->
 	<update id="updateMemeberPno" parameterType="com.dao.MemberDao">

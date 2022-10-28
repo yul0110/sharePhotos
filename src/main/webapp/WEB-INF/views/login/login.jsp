@@ -163,9 +163,9 @@
             <form action="forms/contact.php" method="post" role="form" class="php-email-form">
               <div class="row">
                 <div class="col-md-6 form-group" style="margin:auto;">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                  <input type="text" name="id" class="form-control" id="userId" placeholder="Your Id" required>
                   <br>
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                  <input type="text" name="pw" class="form-control" id="userPw" placeholder="Your Password" required>
                 </div>
               </div>
               <div class="my-3">
@@ -173,9 +173,9 @@
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
-              <div class="text-center"><button type="submit">login</button></div>
+              <div class="text-center"><button id="loginCheckAjax" type="button">login</button></div>
               <br>
-              <div class="text-center"><button type="submit">join us</button></div>
+              <div class="text-center"><button  type="button">join us</button></div>
             </form>
           </div><!-- End Contact Form -->
 

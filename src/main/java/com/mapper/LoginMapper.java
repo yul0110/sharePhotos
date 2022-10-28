@@ -17,4 +17,8 @@ public interface LoginMapper {
 	int updateMemeberAddr(MemberDao memberDao);
 	
 	int selectIdCheck(MemberDao memberDao);
+	
+	int selectLoginIdCheck(MemberDao memberDao);
+	
+	Integer selectLoginCheck(MemberDao memberDao);
 }

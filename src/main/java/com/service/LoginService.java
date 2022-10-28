@@ -12,4 +12,8 @@ public interface LoginService {
 	
 	int selectIdCheck(MemberDao memberDao);
 	
+	Integer selectLoginCheck(MemberDao memberDao);
+	
+	int selectLoginIdCheck(MemberDao memberDao);
+	
 }
