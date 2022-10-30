@@ -35,8 +35,6 @@
 	 		let formUserTarget = $("#userId");
 	 		let formPwTarget = $("#userPw");
 	 		
-	 		
-	 		
  	 		var parameterData = {
 							userId : formUserTarget.val(),
 							pw : formPwTarget.val()}
@@ -46,19 +44,13 @@
 																			alert('로그인 되었습니다.');
 																		}else{
 																			alert('로그인을 실패 했습니다.');
-																		}
-																		
+																		}																	
 																		$('.col-lg-6').find('h2').html(d.msg);
 																	});
-		 });
-		 
+		 }); 
 	 };
 
 
-	 
-	 
-	 
-	 
 	 
 	 
 	 

@@ -62,14 +62,9 @@ public class LoginController {
 	   mv.addObject("result",result);
 	   return mv;
 	}
-	   
-	   
-	   
+	      
 	   //1. 아이디와 비번이 데이터로 들어온다
 	   //flag = 0 로그인에 실패하거나 아이디나 비번이 틀린경우
-	   //int flag = 0;
-	   //String msg = "";
-	   
 	   //2. 아이디가 디비 회원 userId 에 존재하는지 확인
 	   //디비에 userid값을 넣어서 있는지 확인
 	   //3. 존재한다면 아이디와 비번을 넣었을때 검색이 성공되는지 확인
@@ -84,11 +79,6 @@ public class LoginController {
 	   
 	   
 
-	
-	
-	
-	
-	
 	//회원가입 Ajax
 	@RequestMapping(value = "/joinAjax", method = RequestMethod.POST)
 	public ModelAndView joinusAjax(@RequestBody MemberDao memberDao) {

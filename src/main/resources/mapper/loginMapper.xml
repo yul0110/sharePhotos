@@ -34,7 +34,6 @@
 	</select>
 	
 	
-	
 	<!-- Update -->
 	<update id="updateMemeberPno" parameterType="com.dao.MemberDao">
 		UPDATE member
