@@ -3,11 +3,11 @@
 
 <%@ include file="/WEB-INF/views/common/header.jsp" %>
 
-<script src="resources/js/login/login.js"></script>
+<script src="resources/js/login/login.js"></script> <!-- 해당페이지 js연결 -->
 
 <body>
 
-	<%@ include file="/WEB-INF/views/common/topMenu.jsp" %>
+	<%@ include file="/WEB-INF/views/common/topMenu.jsp" %> 
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="hero d-flex flex-column justify-content-center align-items-center" data-aos="fade" data-aos-delay="1500">
