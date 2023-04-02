@@ -39,7 +39,7 @@
                   <input type="password" name="pwc" class="form-control" id="pwc" placeholder="8~30자 영문,숫자,특수문자" maxlength='30' required>
                   <br>
                   <br>
-                  <button type="button" id="updatePwAjax">비밀번호 수정하기</button>
+                  <button type="button" id="updatePwAjax">수정하기</button>
                   <br>
                   <br>
                   <h5 id="nmError"style="font-size:15px;">이름 <strong class="errorMsg" style="color:red;"></strong></h5>

@@ -1,17 +1,14 @@
 package com.controller;
 
 import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
-
 import com.dao.MemberDao;
 import com.service.MyPageService;
-import com.vo.Faq;
 import com.vo.Member;
 
 @Controller
@@ -75,8 +72,6 @@ public class MyPageController {
 		 
 		 return mv;
 	}
-	
-	
 	
 	
 	//회원 탈퇴 페이지

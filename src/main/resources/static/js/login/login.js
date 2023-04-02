@@ -51,15 +51,6 @@
 	 };
 
 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
 	 $(function() {
 	 	yul.page = new yul.page();
 	 });

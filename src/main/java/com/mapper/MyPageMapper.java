@@ -1,9 +1,7 @@
 package com.mapper;
 
 import java.util.List;
-
 import org.apache.ibatis.annotations.Mapper;
-
 import com.dao.MemberDao;
 import com.vo.Member;
 
